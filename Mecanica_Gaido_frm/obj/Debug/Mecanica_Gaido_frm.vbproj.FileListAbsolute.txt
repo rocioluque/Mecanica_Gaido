@@ -25,3 +25,5 @@ C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_fr
 C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmProductos.resources
 C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmVehiculos.resources
 C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmVentas.resources
+C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmCompras.resources
+C:\Users\alumn\Documents\Instituto\Segundo año\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmOrdenesReparacion.resources
