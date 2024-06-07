@@ -23,9 +23,8 @@ Partial Class frmPersonas
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPersonas))
-        Me.grbGrillaPersonas = New System.Windows.Forms.DataGridView()
+        Me.grdGrillaPersonas = New System.Windows.Forms.DataGridView()
         Me.cboCiudad = New System.Windows.Forms.ComboBox()
-        Me.txtNota = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
@@ -44,46 +43,45 @@ Partial Class frmPersonas
         Me.cboProvincia = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        CType(Me.grbGrillaPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnEmpleados = New System.Windows.Forms.Button()
+        Me.btnCtasCtes = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtNota = New System.Windows.Forms.RichTextBox()
+        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'grbGrillaPersonas
+        'grdGrillaPersonas
         '
-        Me.grbGrillaPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grbGrillaPersonas.Location = New System.Drawing.Point(108, 286)
-        Me.grbGrillaPersonas.Margin = New System.Windows.Forms.Padding(2)
-        Me.grbGrillaPersonas.Name = "grbGrillaPersonas"
-        Me.grbGrillaPersonas.RowHeadersWidth = 51
-        Me.grbGrillaPersonas.RowTemplate.Height = 24
-        Me.grbGrillaPersonas.Size = New System.Drawing.Size(739, 248)
-        Me.grbGrillaPersonas.TabIndex = 35
+        Me.grdGrillaPersonas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.grdGrillaPersonas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
+        Me.grdGrillaPersonas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.grdGrillaPersonas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.grdGrillaPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdGrillaPersonas.Location = New System.Drawing.Point(90, 311)
+        Me.grdGrillaPersonas.Margin = New System.Windows.Forms.Padding(2)
+        Me.grdGrillaPersonas.Name = "grdGrillaPersonas"
+        Me.grdGrillaPersonas.RowHeadersWidth = 51
+        Me.grdGrillaPersonas.RowTemplate.Height = 24
+        Me.grdGrillaPersonas.Size = New System.Drawing.Size(822, 248)
+        Me.grdGrillaPersonas.TabIndex = 35
         '
         'cboCiudad
         '
         Me.cboCiudad.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCiudad.FormattingEnabled = True
-        Me.cboCiudad.Location = New System.Drawing.Point(332, 114)
+        Me.cboCiudad.Location = New System.Drawing.Point(379, 153)
         Me.cboCiudad.Margin = New System.Windows.Forms.Padding(2)
         Me.cboCiudad.Name = "cboCiudad"
         Me.cboCiudad.Size = New System.Drawing.Size(92, 25)
         Me.cboCiudad.TabIndex = 34
         '
-        'txtNota
-        '
-        Me.txtNota.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNota.Location = New System.Drawing.Point(332, 156)
-        Me.txtNota.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtNota.Name = "txtNota"
-        Me.txtNota.Size = New System.Drawing.Size(92, 23)
-        Me.txtNota.TabIndex = 33
-        '
         'txtDireccion
         '
         Me.txtDireccion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(332, 36)
+        Me.txtDireccion.Location = New System.Drawing.Point(379, 77)
         Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(92, 23)
@@ -92,7 +90,7 @@ Partial Class frmPersonas
         'txtCorreo
         '
         Me.txtCorreo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCorreo.Location = New System.Drawing.Point(143, 196)
+        Me.txtCorreo.Location = New System.Drawing.Point(143, 191)
         Me.txtCorreo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(92, 23)
@@ -101,7 +99,7 @@ Partial Class frmPersonas
         'txtTelefono
         '
         Me.txtTelefono.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefono.Location = New System.Drawing.Point(143, 156)
+        Me.txtTelefono.Location = New System.Drawing.Point(143, 153)
         Me.txtTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(92, 23)
@@ -110,7 +108,7 @@ Partial Class frmPersonas
         'txtApellido
         '
         Me.txtApellido.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido.Location = New System.Drawing.Point(143, 116)
+        Me.txtApellido.Location = New System.Drawing.Point(143, 115)
         Me.txtApellido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(92, 23)
@@ -119,7 +117,7 @@ Partial Class frmPersonas
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(143, 76)
+        Me.txtNombre.Location = New System.Drawing.Point(143, 77)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(92, 23)
@@ -128,7 +126,7 @@ Partial Class frmPersonas
         'txtID
         '
         Me.txtID.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtID.Location = New System.Drawing.Point(143, 36)
+        Me.txtID.Location = New System.Drawing.Point(143, 39)
         Me.txtID.Margin = New System.Windows.Forms.Padding(2)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(92, 23)
@@ -138,7 +136,8 @@ Partial Class frmPersonas
         '
         Me.chkEstado.AutoSize = True
         Me.chkEstado.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkEstado.Location = New System.Drawing.Point(257, 201)
+        Me.chkEstado.ForeColor = System.Drawing.Color.White
+        Me.chkEstado.Location = New System.Drawing.Point(304, 193)
         Me.chkEstado.Margin = New System.Windows.Forms.Padding(2)
         Me.chkEstado.Name = "chkEstado"
         Me.chkEstado.Size = New System.Drawing.Size(85, 21)
@@ -151,7 +150,7 @@ Partial Class frmPersonas
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(254, 162)
+        Me.Label8.Location = New System.Drawing.Point(65, 232)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 17)
@@ -163,7 +162,7 @@ Partial Class frmPersonas
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(254, 122)
+        Me.Label7.Location = New System.Drawing.Point(301, 156)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(57, 17)
@@ -175,7 +174,7 @@ Partial Class frmPersonas
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(254, 42)
+        Me.Label6.Location = New System.Drawing.Point(301, 80)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(69, 17)
@@ -187,7 +186,7 @@ Partial Class frmPersonas
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(65, 202)
+        Me.Label5.Location = New System.Drawing.Point(65, 194)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 17)
@@ -199,7 +198,7 @@ Partial Class frmPersonas
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(65, 162)
+        Me.Label4.Location = New System.Drawing.Point(65, 156)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(62, 17)
@@ -211,7 +210,7 @@ Partial Class frmPersonas
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(65, 122)
+        Me.Label3.Location = New System.Drawing.Point(65, 118)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(61, 17)
@@ -223,7 +222,7 @@ Partial Class frmPersonas
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(65, 82)
+        Me.Label2.Location = New System.Drawing.Point(65, 80)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 17)
@@ -244,9 +243,10 @@ Partial Class frmPersonas
         '
         'cboProvincia
         '
+        Me.cboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboProvincia.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboProvincia.FormattingEnabled = True
-        Me.cboProvincia.Location = New System.Drawing.Point(332, 74)
+        Me.cboProvincia.Location = New System.Drawing.Point(379, 113)
         Me.cboProvincia.Margin = New System.Windows.Forms.Padding(2)
         Me.cboProvincia.Name = "cboProvincia"
         Me.cboProvincia.Size = New System.Drawing.Size(92, 25)
@@ -257,7 +257,7 @@ Partial Class frmPersonas
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(254, 82)
+        Me.Label9.Location = New System.Drawing.Point(301, 116)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(68, 17)
@@ -266,64 +266,108 @@ Partial Class frmPersonas
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.Button1.FlatAppearance.BorderSize = 2
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(565, 30)
+        Me.Button1.Location = New System.Drawing.Point(304, 32)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 35)
+        Me.Button1.Size = New System.Drawing.Size(50, 29)
         Me.Button1.TabIndex = 38
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "..."
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnEmpleados
         '
-        Me.Button2.BackColor = System.Drawing.Color.SeaGreen
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(565, 82)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 35)
-        Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEmpleados.BackColor = System.Drawing.Color.Transparent
+        Me.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEmpleados.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnEmpleados.FlatAppearance.BorderSize = 2
+        Me.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEmpleados.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmpleados.ForeColor = System.Drawing.Color.White
+        Me.btnEmpleados.Location = New System.Drawing.Point(728, 24)
+        Me.btnEmpleados.Name = "btnEmpleados"
+        Me.btnEmpleados.Size = New System.Drawing.Size(117, 37)
+        Me.btnEmpleados.TabIndex = 41
+        Me.btnEmpleados.Text = "Empleados"
+        Me.btnEmpleados.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnCtasCtes
         '
-        Me.Button3.BackColor = System.Drawing.Color.SeaGreen
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(703, 82)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(97, 35)
-        Me.Button3.TabIndex = 41
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnCtasCtes.BackColor = System.Drawing.Color.Transparent
+        Me.btnCtasCtes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCtasCtes.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCtasCtes.FlatAppearance.BorderSize = 2
+        Me.btnCtasCtes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCtasCtes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCtasCtes.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCtasCtes.ForeColor = System.Drawing.Color.White
+        Me.btnCtasCtes.Location = New System.Drawing.Point(588, 24)
+        Me.btnCtasCtes.Name = "btnCtasCtes"
+        Me.btnCtasCtes.Size = New System.Drawing.Size(117, 37)
+        Me.btnCtasCtes.TabIndex = 40
+        Me.btnCtasCtes.Text = "Ctas Corrientes"
+        Me.btnCtasCtes.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnCancelar
         '
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
-        Me.Button4.FlatAppearance.BorderSize = 2
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(703, 30)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(97, 35)
-        Me.Button4.TabIndex = 40
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCancelar.FlatAppearance.BorderSize = 2
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Location = New System.Drawing.Point(728, 182)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
+        Me.btnCancelar.TabIndex = 43
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.BackColor = System.Drawing.Color.Transparent
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnAceptar.FlatAppearance.BorderSize = 2
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.White
+        Me.btnAceptar.Location = New System.Drawing.Point(588, 182)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
+        Me.btnAceptar.TabIndex = 42
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(482, 154)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 25)
+        Me.PictureBox1.TabIndex = 44
+        Me.PictureBox1.TabStop = False
+        '
+        'txtNota
+        '
+        Me.txtNota.Location = New System.Drawing.Point(143, 226)
+        Me.txtNota.Name = "txtNota"
+        Me.txtNota.Size = New System.Drawing.Size(328, 23)
+        Me.txtNota.TabIndex = 45
+        Me.txtNota.Text = ""
         '
         'frmPersonas
         '
@@ -332,15 +376,17 @@ Partial Class frmPersonas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.txtNota)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.btnEmpleados)
+        Me.Controls.Add(Me.btnCtasCtes)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cboProvincia)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.grbGrillaPersonas)
+        Me.Controls.Add(Me.grdGrillaPersonas)
         Me.Controls.Add(Me.cboCiudad)
-        Me.Controls.Add(Me.txtNota)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtCorreo)
         Me.Controls.Add(Me.txtTelefono)
@@ -362,15 +408,15 @@ Partial Class frmPersonas
         Me.Name = "frmPersonas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmPersonas"
-        CType(Me.grbGrillaPersonas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents grbGrillaPersonas As DataGridView
+    Friend WithEvents grdGrillaPersonas As DataGridView
     Friend WithEvents cboCiudad As ComboBox
-    Friend WithEvents txtNota As TextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents txtCorreo As TextBox
     Friend WithEvents txtTelefono As TextBox
@@ -389,7 +435,10 @@ Partial Class frmPersonas
     Friend WithEvents cboProvincia As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnEmpleados As Button
+    Friend WithEvents btnCtasCtes As Button
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents txtNota As RichTextBox
 End Class

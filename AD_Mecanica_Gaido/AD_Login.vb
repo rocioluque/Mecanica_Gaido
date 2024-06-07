@@ -17,18 +17,19 @@ Public Class AD_Login
                 command.Parameters.AddWithValue("@usuario", usuario)
                 command.Parameters.AddWithValue("@contraseña", contraseña)
 
-                Dim reader = command.ExecuteReader()
-
-                If reader.HasRows Then
-                    While reader.Read()
-                        UsuarioActivo.usuario = reader.GetString(1)
-                    End While
-                    CargarUsuario_MenuPrincipal(usuario)
-                    Return True
-                Else
-                    Return False
-                End If
+                Using reader = command.ExecuteReader()
+                    If reader.HasRows Then
+                        While reader.Read()
+                            UsuarioActivo.usuario = reader.GetString(1)
+                        End While
+                        CargarUsuario_MenuPrincipal(usuario)
+                        Return True
+                    Else
+                        Return False
+                    End If
+                End Using
             End Using
+
         End Using
     End Function
 
@@ -39,17 +40,17 @@ Public Class AD_Login
                 command.CommandType = CommandType.StoredProcedure
                 command.Parameters.AddWithValue("@usuario", usuario)
 
-                Dim reader = command.ExecuteReader()
-
-                If reader.HasRows Then
-                    While reader.Read()
-                        UsuarioActivo.usuario = reader.GetString(0)
-                        UsuarioActivo.nombre_rol = reader.GetString(1)
-                        UsuarioActivo.nombrePersona = reader.GetString(2)
-                        UsuarioActivo.apellidoPersona = reader.GetString(3)
-                        UsuarioActivo.correoPersona = reader.GetString(4)
-                    End While
-                End If
+                Using reader = command.ExecuteReader()
+                    If reader.HasRows Then
+                        While reader.Read()
+                            UsuarioActivo.usuario = reader.GetString(0)
+                            UsuarioActivo.nombre_rol = reader.GetString(1)
+                            UsuarioActivo.nombrePersona = reader.GetString(2)
+                            UsuarioActivo.apellidoPersona = reader.GetString(3)
+                            UsuarioActivo.correoPersona = reader.GetString(4)
+                        End While
+                    End If
+                End Using
             End Using
         End Using
     End Sub

@@ -1,32 +1,23 @@
-﻿Public Class frmPersonas
-    Private Sub btnInicio_Click(sender As Object, e As EventArgs) 
-        MenuPrincipal.Show()
-        Me.Close()
+﻿Imports System.Data
+Imports Dominio
+
+Public Class frmPersonas
+    Dim o_Personas As New Personas
+
+    Public Sub Cargar_Grilla()
+        Try
+            Dim tabla As DataTable = o_Personas.Cargar_Grilla
+            grdGrillaPersonas.DataSource = tabla
+        Catch ex As Exception
+            MsgBox("Error al cargar la grilla de personas: " & ex.Message, vbCritical, "Error")
+        End Try
     End Sub
 
-    Private Sub btnVehiculos_Click(sender As Object, e As EventArgs) 
-        frmVehiculos.Show()
-        Me.Close()
+    Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cargar_Grilla()
     End Sub
 
-    Private Sub btnProductos_Click(sender As Object, e As EventArgs) 
-        frmProductos.Show()
-        Me.Close()
+    Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
+        frmEmpeados.ShowDialog()
     End Sub
-
-    Private Sub btnOrdenReparacón_Click(sender As Object, e As EventArgs) 
-        frmOrdenesReparacion.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub btnVentas_Click(sender As Object, e As EventArgs) 
-        frmVentas.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub btnCompras_Click(sender As Object, e As EventArgs) 
-        frmCompras.Show()
-        Me.Close()
-    End Sub
-
 End Class
