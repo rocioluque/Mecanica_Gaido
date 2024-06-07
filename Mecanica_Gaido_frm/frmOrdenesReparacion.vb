@@ -1,3 +1,4 @@
-﻿Public Class frmOrdenesReparacion
+﻿
+Public Class frmOrdenesReparacion
 
 End Class
