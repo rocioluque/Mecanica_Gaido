@@ -23,7 +23,234 @@ Partial Class frmCompras
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCompras))
+        Me.grbGrilla = New System.Windows.Forms.DataGridView()
+        Me.chkEstado = New System.Windows.Forms.CheckBox()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.txtOtrosimp = New System.Windows.Forms.TextBox()
+        Me.txtIvamonto = New System.Windows.Forms.TextBox()
+        Me.txtIva = New System.Windows.Forms.TextBox()
+        Me.txtSubtotal = New System.Windows.Forms.TextBox()
+        Me.txtNumcomp = New System.Windows.Forms.TextBox()
+        Me.txtFechacompra = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.cmbFormapago = New System.Windows.Forms.ComboBox()
+        Me.cmbProveedor = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.grbGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'grbGrilla
+        '
+        Me.grbGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grbGrilla.Location = New System.Drawing.Point(324, 47)
+        Me.grbGrilla.Margin = New System.Windows.Forms.Padding(2)
+        Me.grbGrilla.Name = "grbGrilla"
+        Me.grbGrilla.RowHeadersWidth = 51
+        Me.grbGrilla.RowTemplate.Height = 24
+        Me.grbGrilla.Size = New System.Drawing.Size(395, 206)
+        Me.grbGrilla.TabIndex = 45
+        '
+        'chkEstado
+        '
+        Me.chkEstado.AutoSize = True
+        Me.chkEstado.Location = New System.Drawing.Point(126, 506)
+        Me.chkEstado.Margin = New System.Windows.Forms.Padding(2)
+        Me.chkEstado.Name = "chkEstado"
+        Me.chkEstado.Size = New System.Drawing.Size(68, 17)
+        Me.chkEstado.TabIndex = 44
+        Me.chkEstado.Text = "¿Activo?"
+        Me.chkEstado.UseVisualStyleBackColor = True
+        '
+        'txtTotal
+        '
+        Me.txtTotal.Location = New System.Drawing.Point(165, 463)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.Size = New System.Drawing.Size(92, 20)
+        Me.txtTotal.TabIndex = 43
+        '
+        'txtOtrosimp
+        '
+        Me.txtOtrosimp.Location = New System.Drawing.Point(165, 407)
+        Me.txtOtrosimp.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtOtrosimp.Name = "txtOtrosimp"
+        Me.txtOtrosimp.Size = New System.Drawing.Size(92, 20)
+        Me.txtOtrosimp.TabIndex = 42
+        '
+        'txtIvamonto
+        '
+        Me.txtIvamonto.Location = New System.Drawing.Point(165, 363)
+        Me.txtIvamonto.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIvamonto.Name = "txtIvamonto"
+        Me.txtIvamonto.Size = New System.Drawing.Size(92, 20)
+        Me.txtIvamonto.TabIndex = 41
+        '
+        'txtIva
+        '
+        Me.txtIva.Location = New System.Drawing.Point(165, 312)
+        Me.txtIva.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIva.Name = "txtIva"
+        Me.txtIva.Size = New System.Drawing.Size(92, 20)
+        Me.txtIva.TabIndex = 40
+        '
+        'txtSubtotal
+        '
+        Me.txtSubtotal.Location = New System.Drawing.Point(165, 262)
+        Me.txtSubtotal.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.Size = New System.Drawing.Size(92, 20)
+        Me.txtSubtotal.TabIndex = 39
+        '
+        'txtNumcomp
+        '
+        Me.txtNumcomp.Location = New System.Drawing.Point(165, 123)
+        Me.txtNumcomp.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNumcomp.Name = "txtNumcomp"
+        Me.txtNumcomp.Size = New System.Drawing.Size(92, 20)
+        Me.txtNumcomp.TabIndex = 38
+        '
+        'txtFechacompra
+        '
+        Me.txtFechacompra.Location = New System.Drawing.Point(165, 86)
+        Me.txtFechacompra.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFechacompra.Name = "txtFechacompra"
+        Me.txtFechacompra.Size = New System.Drawing.Size(92, 20)
+        Me.txtFechacompra.TabIndex = 37
+        '
+        'txtID
+        '
+        Me.txtID.Location = New System.Drawing.Point(165, 47)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(92, 20)
+        Me.txtID.TabIndex = 36
+        '
+        'cmbFormapago
+        '
+        Me.cmbFormapago.FormattingEnabled = True
+        Me.cmbFormapago.Location = New System.Drawing.Point(165, 208)
+        Me.cmbFormapago.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbFormapago.Name = "cmbFormapago"
+        Me.cmbFormapago.Size = New System.Drawing.Size(92, 21)
+        Me.cmbFormapago.TabIndex = 35
+        '
+        'cmbProveedor
+        '
+        Me.cmbProveedor.FormattingEnabled = True
+        Me.cmbProveedor.Location = New System.Drawing.Point(165, 164)
+        Me.cmbProveedor.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbProveedor.Name = "cmbProveedor"
+        Me.cmbProveedor.Size = New System.Drawing.Size(92, 21)
+        Me.cmbProveedor.TabIndex = 34
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(64, 463)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(31, 13)
+        Me.Label11.TabIndex = 33
+        Me.Label11.Text = "Total"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(64, 407)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(82, 13)
+        Me.Label10.TabIndex = 32
+        Me.Label10.Text = "Otros impuestos"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(66, 363)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(56, 13)
+        Me.Label9.TabIndex = 31
+        Me.Label9.Text = "IVA monto"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(64, 312)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(24, 13)
+        Me.Label8.TabIndex = 30
+        Me.Label8.Text = "IVA"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(64, 262)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(46, 13)
+        Me.Label7.TabIndex = 29
+        Me.Label7.Text = "Subtotal"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(64, 213)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(78, 13)
+        Me.Label5.TabIndex = 28
+        Me.Label5.Text = "Forma de pago"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(64, 169)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(56, 13)
+        Me.Label4.TabIndex = 27
+        Me.Label4.Text = "Proveedor"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(64, 125)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.TabIndex = 26
+        Me.Label3.Text = "N° Comprobante"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(64, 86)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 13)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "Fecha compra"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(64, 47)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(18, 13)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "ID"
         '
         'frmCompras
         '
@@ -33,12 +260,59 @@ Partial Class frmCompras
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(939, 581)
+        Me.Controls.Add(Me.grbGrilla)
+        Me.Controls.Add(Me.chkEstado)
+        Me.Controls.Add(Me.txtTotal)
+        Me.Controls.Add(Me.txtOtrosimp)
+        Me.Controls.Add(Me.txtIvamonto)
+        Me.Controls.Add(Me.txtIva)
+        Me.Controls.Add(Me.txtSubtotal)
+        Me.Controls.Add(Me.txtNumcomp)
+        Me.Controls.Add(Me.txtFechacompra)
+        Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.cmbFormapago)
+        Me.Controls.Add(Me.cmbProveedor)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmCompras"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmCompras"
+        CType(Me.grbGrilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents grbGrilla As DataGridView
+    Friend WithEvents chkEstado As CheckBox
+    Friend WithEvents txtTotal As TextBox
+    Friend WithEvents txtOtrosimp As TextBox
+    Friend WithEvents txtIvamonto As TextBox
+    Friend WithEvents txtIva As TextBox
+    Friend WithEvents txtSubtotal As TextBox
+    Friend WithEvents txtNumcomp As TextBox
+    Friend WithEvents txtFechacompra As TextBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents cmbFormapago As ComboBox
+    Friend WithEvents cmbProveedor As ComboBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class
