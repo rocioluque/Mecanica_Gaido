@@ -20,4 +20,8 @@ Public Class frmPersonas
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         frmEmpeados.ShowDialog()
     End Sub
+
+    Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCtasCtes.Click
+        frmCtasCorrientes.ShowDialog()
+    End Sub
 End Class
