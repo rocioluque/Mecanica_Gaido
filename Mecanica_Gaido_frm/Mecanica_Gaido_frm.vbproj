@@ -87,6 +87,18 @@
     <Compile Include="frmCompras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCtasCorrientes.Designer.vb">
+      <DependentUpon>frmCtasCorrientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCtasCorrientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpeados.Designer.vb">
+      <DependentUpon>frmEmpeados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpeados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
