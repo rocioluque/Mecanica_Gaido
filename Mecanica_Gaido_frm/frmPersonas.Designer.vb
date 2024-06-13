@@ -23,9 +23,7 @@ Partial Class frmPersonas
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPersonas))
-        Me.grdGrillaPersonas = New System.Windows.Forms.DataGridView()
         Me.cboCiudad = New System.Windows.Forms.ComboBox()
-        Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
@@ -49,24 +47,11 @@ Partial Class frmPersonas
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtNota = New System.Windows.Forms.RichTextBox()
-        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.grdGrillaPersonas = New System.Windows.Forms.DataGridView()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'grdGrillaPersonas
-        '
-        Me.grdGrillaPersonas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
-        Me.grdGrillaPersonas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
-        Me.grdGrillaPersonas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.grdGrillaPersonas.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.grdGrillaPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grdGrillaPersonas.Location = New System.Drawing.Point(90, 311)
-        Me.grdGrillaPersonas.Margin = New System.Windows.Forms.Padding(2)
-        Me.grdGrillaPersonas.Name = "grdGrillaPersonas"
-        Me.grdGrillaPersonas.RowHeadersWidth = 51
-        Me.grdGrillaPersonas.RowTemplate.Height = 24
-        Me.grdGrillaPersonas.Size = New System.Drawing.Size(822, 248)
-        Me.grdGrillaPersonas.TabIndex = 35
         '
         'cboCiudad
         '
@@ -75,17 +60,8 @@ Partial Class frmPersonas
         Me.cboCiudad.Location = New System.Drawing.Point(384, 113)
         Me.cboCiudad.Margin = New System.Windows.Forms.Padding(2)
         Me.cboCiudad.Name = "cboCiudad"
-        Me.cboCiudad.Size = New System.Drawing.Size(92, 25)
+        Me.cboCiudad.Size = New System.Drawing.Size(118, 25)
         Me.cboCiudad.TabIndex = 34
-        '
-        'txtDireccion
-        '
-        Me.txtDireccion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(384, 39)
-        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(92, 23)
-        Me.txtDireccion.TabIndex = 32
         '
         'txtCorreo
         '
@@ -93,7 +69,7 @@ Partial Class frmPersonas
         Me.txtCorreo.Location = New System.Drawing.Point(143, 191)
         Me.txtCorreo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(92, 23)
+        Me.txtCorreo.Size = New System.Drawing.Size(118, 23)
         Me.txtCorreo.TabIndex = 31
         '
         'txtTelefono
@@ -102,7 +78,7 @@ Partial Class frmPersonas
         Me.txtTelefono.Location = New System.Drawing.Point(143, 153)
         Me.txtTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(92, 23)
+        Me.txtTelefono.Size = New System.Drawing.Size(118, 23)
         Me.txtTelefono.TabIndex = 30
         '
         'txtApellido
@@ -111,7 +87,7 @@ Partial Class frmPersonas
         Me.txtApellido.Location = New System.Drawing.Point(143, 115)
         Me.txtApellido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(92, 23)
+        Me.txtApellido.Size = New System.Drawing.Size(118, 23)
         Me.txtApellido.TabIndex = 29
         '
         'txtNombre
@@ -120,7 +96,7 @@ Partial Class frmPersonas
         Me.txtNombre.Location = New System.Drawing.Point(143, 77)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(92, 23)
+        Me.txtNombre.Size = New System.Drawing.Size(118, 23)
         Me.txtNombre.TabIndex = 28
         '
         'txtID
@@ -129,7 +105,7 @@ Partial Class frmPersonas
         Me.txtID.Location = New System.Drawing.Point(143, 39)
         Me.txtID.Margin = New System.Windows.Forms.Padding(2)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(92, 23)
+        Me.txtID.Size = New System.Drawing.Size(43, 23)
         Me.txtID.TabIndex = 27
         '
         'chkEstado
@@ -249,7 +225,7 @@ Partial Class frmPersonas
         Me.cboProvincia.Location = New System.Drawing.Point(384, 75)
         Me.cboProvincia.Margin = New System.Windows.Forms.Padding(2)
         Me.cboProvincia.Name = "cboProvincia"
-        Me.cboProvincia.Size = New System.Drawing.Size(92, 25)
+        Me.cboProvincia.Size = New System.Drawing.Size(118, 25)
         Me.cboProvincia.TabIndex = 37
         '
         'Label9
@@ -274,9 +250,9 @@ Partial Class frmPersonas
         Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBuscar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.ForeColor = System.Drawing.Color.White
-        Me.btnBuscar.Location = New System.Drawing.Point(185, 224)
+        Me.btnBuscar.Location = New System.Drawing.Point(211, 35)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(50, 29)
+        Me.btnBuscar.Size = New System.Drawing.Size(50, 28)
         Me.btnBuscar.TabIndex = 38
         Me.btnBuscar.Text = "..."
         Me.btnBuscar.UseVisualStyleBackColor = False
@@ -355,7 +331,7 @@ Partial Class frmPersonas
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(491, 113)
+        Me.PictureBox1.Location = New System.Drawing.Point(518, 113)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(26, 25)
         Me.PictureBox1.TabIndex = 44
@@ -369,6 +345,23 @@ Partial Class frmPersonas
         Me.txtNota.TabIndex = 45
         Me.txtNota.Text = ""
         '
+        'txtDireccion
+        '
+        Me.txtDireccion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDireccion.Location = New System.Drawing.Point(384, 39)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(118, 23)
+        Me.txtDireccion.TabIndex = 46
+        '
+        'grdGrillaPersonas
+        '
+        Me.grdGrillaPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdGrillaPersonas.Location = New System.Drawing.Point(50, 293)
+        Me.grdGrillaPersonas.Name = "grdGrillaPersonas"
+        Me.grdGrillaPersonas.Size = New System.Drawing.Size(864, 268)
+        Me.grdGrillaPersonas.TabIndex = 47
+        '
         'frmPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -376,6 +369,8 @@ Partial Class frmPersonas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
+        Me.Controls.Add(Me.grdGrillaPersonas)
+        Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtNota)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnCancelar)
@@ -385,9 +380,7 @@ Partial Class frmPersonas
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.cboProvincia)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.grdGrillaPersonas)
         Me.Controls.Add(Me.cboCiudad)
-        Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtCorreo)
         Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.txtApellido)
@@ -408,16 +401,13 @@ Partial Class frmPersonas
         Me.Name = "frmPersonas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmPersonas"
-        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents grdGrillaPersonas As DataGridView
     Friend WithEvents cboCiudad As ComboBox
-    Friend WithEvents txtDireccion As TextBox
     Friend WithEvents txtCorreo As TextBox
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents txtApellido As TextBox
@@ -441,4 +431,6 @@ Partial Class frmPersonas
     Friend WithEvents btnAceptar As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtNota As RichTextBox
+    Friend WithEvents txtDireccion As TextBox
+    Friend WithEvents grdGrillaPersonas As DataGridView
 End Class
