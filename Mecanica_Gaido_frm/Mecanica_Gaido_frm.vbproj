@@ -209,6 +209,10 @@
     <Content Include="mg_logo_ico.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AD_Mecanica_Gaido\AD_Mecanica_Gaido.vbproj">
+      <Project>{653d95e6-c213-451f-83c1-eed875107767}</Project>
+      <Name>AD_Mecanica_Gaido</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Comun_Soporte\Comun_Soporte.vbproj">
       <Project>{6f390dc3-4d06-443d-af66-56e546297fc3}</Project>
       <Name>Comun_Soporte</Name>

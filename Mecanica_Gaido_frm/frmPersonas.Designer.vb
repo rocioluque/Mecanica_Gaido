@@ -48,9 +48,10 @@ Partial Class frmPersonas
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtNota = New System.Windows.Forms.RichTextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
-        Me.grdGrillaPersonas = New System.Windows.Forms.DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnModificar = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cboCiudad
@@ -60,7 +61,7 @@ Partial Class frmPersonas
         Me.cboCiudad.Location = New System.Drawing.Point(384, 113)
         Me.cboCiudad.Margin = New System.Windows.Forms.Padding(2)
         Me.cboCiudad.Name = "cboCiudad"
-        Me.cboCiudad.Size = New System.Drawing.Size(118, 25)
+        Me.cboCiudad.Size = New System.Drawing.Size(133, 25)
         Me.cboCiudad.TabIndex = 34
         '
         'txtCorreo
@@ -219,14 +220,16 @@ Partial Class frmPersonas
         '
         'cboProvincia
         '
+        Me.cboProvincia.DisplayMember = "Nombre"
         Me.cboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboProvincia.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboProvincia.FormattingEnabled = True
         Me.cboProvincia.Location = New System.Drawing.Point(384, 75)
         Me.cboProvincia.Margin = New System.Windows.Forms.Padding(2)
         Me.cboProvincia.Name = "cboProvincia"
-        Me.cboProvincia.Size = New System.Drawing.Size(118, 25)
+        Me.cboProvincia.Size = New System.Drawing.Size(133, 25)
         Me.cboProvincia.TabIndex = 37
+        Me.cboProvincia.ValueMember = "ID_Provincia"
         '
         'Label9
         '
@@ -331,7 +334,7 @@ Partial Class frmPersonas
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(518, 113)
+        Me.PictureBox1.Location = New System.Drawing.Point(533, 113)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(26, 25)
         Me.PictureBox1.TabIndex = 44
@@ -341,7 +344,7 @@ Partial Class frmPersonas
         '
         Me.txtNota.Location = New System.Drawing.Point(384, 155)
         Me.txtNota.Name = "txtNota"
-        Me.txtNota.Size = New System.Drawing.Size(133, 59)
+        Me.txtNota.Size = New System.Drawing.Size(175, 59)
         Me.txtNota.TabIndex = 45
         Me.txtNota.Text = ""
         '
@@ -351,16 +354,33 @@ Partial Class frmPersonas
         Me.txtDireccion.Location = New System.Drawing.Point(384, 39)
         Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(118, 23)
+        Me.txtDireccion.Size = New System.Drawing.Size(133, 23)
         Me.txtDireccion.TabIndex = 46
         '
-        'grdGrillaPersonas
+        'DataGridView1
         '
-        Me.grdGrillaPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grdGrillaPersonas.Location = New System.Drawing.Point(50, 293)
-        Me.grdGrillaPersonas.Name = "grdGrillaPersonas"
-        Me.grdGrillaPersonas.Size = New System.Drawing.Size(864, 268)
-        Me.grdGrillaPersonas.TabIndex = 47
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(66, 298)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(834, 241)
+        Me.DataGridView1.TabIndex = 47
+        '
+        'btnModificar
+        '
+        Me.btnModificar.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnModificar.FlatAppearance.BorderSize = 2
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.ForeColor = System.Drawing.Color.White
+        Me.btnModificar.Location = New System.Drawing.Point(588, 136)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(117, 37)
+        Me.btnModificar.TabIndex = 48
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'frmPersonas
         '
@@ -369,7 +389,8 @@ Partial Class frmPersonas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
-        Me.Controls.Add(Me.grdGrillaPersonas)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtNota)
         Me.Controls.Add(Me.PictureBox1)
@@ -402,7 +423,7 @@ Partial Class frmPersonas
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmPersonas"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.grdGrillaPersonas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -432,5 +453,6 @@ Partial Class frmPersonas
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtNota As RichTextBox
     Friend WithEvents txtDireccion As TextBox
-    Friend WithEvents grdGrillaPersonas As DataGridView
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnModificar As Button
 End Class
