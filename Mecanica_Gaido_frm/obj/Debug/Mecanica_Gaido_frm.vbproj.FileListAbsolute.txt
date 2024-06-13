@@ -32,12 +32,9 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\M
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Mecanica_Gaido_frm.pdb
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Mecanica_Gaido_frm.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Comun_Soporte.dll
-C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Dominio.dll
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\AD_Mecanica_Gaido.dll
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Comun_Soporte.pdb
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Comun_Soporte.xml
-C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Dominio.pdb
-C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Dominio.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\AD_Mecanica_Gaido.pdb
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\AD_Mecanica_Gaido.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.vbproj.AssemblyReference.cache

@@ -99,6 +99,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="AD_Personas.vb" />
+    <Compile Include="ServiciosCorreo\ServidorCorreo.vb" />
+    <Compile Include="ServiciosCorreo\SoporteSistemaCorreo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
