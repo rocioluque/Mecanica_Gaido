@@ -1,7 +1,7 @@
 ﻿Imports System.Drawing.Drawing2D
 Imports System.Data
 Imports System.Runtime.InteropServices
-Imports Dominio
+Imports AD_Mecanica_Gaido
 
 Module User32
     <DllImport("user32.dll", EntryPoint:="ReleaseCapture")>
@@ -13,10 +13,7 @@ Module User32
     End Sub
 End Module
 Public Class frmLogin
-    Inherits System.Windows.Forms.Form
-
-    Dim oDs As New DataSet
-    Dim o_usuario As New Usuario
+    Dim o_Login As New AD_Login
 #Region "Css trucho"
     Protected Overrides Sub OnLoad(e As EventArgs)
         MyBase.OnLoad(e)
@@ -54,10 +51,9 @@ Public Class frmLogin
 
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
-        oDs = New DataSet
-        o_usuario = New Usuario
+        o_Login = New AD_Login
 
-            Dim ValidLogin = o_usuario.ValidarUsuario(txtUsuario.Text, txtContraseña.Text)
+        Dim ValidLogin = o_Login.ValidarUsuario(txtUsuario.Text, txtContraseña.Text)
 
         If validLogin = True Then
             MenuPrincipal.Show()
@@ -148,4 +144,7 @@ Public Class frmLogin
         txtUsuario.Focus()
     End Sub
 
+    Private Sub linkContraseña_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkContraseña.LinkClicked
+
+    End Sub
 End Class
