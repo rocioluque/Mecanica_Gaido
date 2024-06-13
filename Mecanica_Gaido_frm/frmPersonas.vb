@@ -72,9 +72,9 @@ Public Class frmPersonas
         datadapter.Fill(oDs)
 
         If oDs.Tables(0).Rows.Count > 0 Then
-            DataGridView1.AutoGenerateColumns = True
-            DataGridView1.DataSource = oDs.Tables(0)
-            DataGridView1.Refresh()
+            grdPersonas.AutoGenerateColumns = True
+            grdPersonas.DataSource = oDs.Tables(0)
+            grdPersonas.Refresh()
         End If
 
         oDs = Nothing
@@ -83,7 +83,7 @@ Public Class frmPersonas
 
 
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
-        frmEmpeados.ShowDialog()
+        frmEmpleados.ShowDialog()
     End Sub
 
     Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCtasCtes.Click
