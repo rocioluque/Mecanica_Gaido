@@ -145,6 +145,6 @@ Public Class frmLogin
     End Sub
 
     Private Sub linkContraseña_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkContraseña.LinkClicked
-
+        frmRecuperarContraseña.ShowDialog()
     End Sub
 End Class
