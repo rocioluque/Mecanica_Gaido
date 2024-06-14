@@ -42,7 +42,7 @@ Partial Class frmPersonas
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnEmpleados = New System.Windows.Forms.Button()
-        Me.btnCtasCtes = New System.Windows.Forms.Button()
+        Me.btnCuentas = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -278,22 +278,22 @@ Partial Class frmPersonas
         Me.btnEmpleados.Text = "Empleados"
         Me.btnEmpleados.UseVisualStyleBackColor = False
         '
-        'btnCtasCtes
+        'btnCuentas
         '
-        Me.btnCtasCtes.BackColor = System.Drawing.Color.Transparent
-        Me.btnCtasCtes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCtasCtes.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
-        Me.btnCtasCtes.FlatAppearance.BorderSize = 2
-        Me.btnCtasCtes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
-        Me.btnCtasCtes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCtasCtes.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCtasCtes.ForeColor = System.Drawing.Color.White
-        Me.btnCtasCtes.Location = New System.Drawing.Point(588, 24)
-        Me.btnCtasCtes.Name = "btnCtasCtes"
-        Me.btnCtasCtes.Size = New System.Drawing.Size(117, 37)
-        Me.btnCtasCtes.TabIndex = 40
-        Me.btnCtasCtes.Text = "Ctas Corrientes"
-        Me.btnCtasCtes.UseVisualStyleBackColor = False
+        Me.btnCuentas.BackColor = System.Drawing.Color.Transparent
+        Me.btnCuentas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCuentas.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCuentas.FlatAppearance.BorderSize = 2
+        Me.btnCuentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCuentas.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCuentas.ForeColor = System.Drawing.Color.White
+        Me.btnCuentas.Location = New System.Drawing.Point(588, 24)
+        Me.btnCuentas.Name = "btnCuentas"
+        Me.btnCuentas.Size = New System.Drawing.Size(117, 37)
+        Me.btnCuentas.TabIndex = 40
+        Me.btnCuentas.Text = "Cuentas"
+        Me.btnCuentas.UseVisualStyleBackColor = False
         '
         'btnCancelar
         '
@@ -399,7 +399,7 @@ Partial Class frmPersonas
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnEmpleados)
-        Me.Controls.Add(Me.btnCtasCtes)
+        Me.Controls.Add(Me.btnCuentas)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.cboProvincia)
         Me.Controls.Add(Me.Label9)
@@ -449,7 +449,7 @@ Partial Class frmPersonas
     Friend WithEvents Label9 As Label
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnEmpleados As Button
-    Friend WithEvents btnCtasCtes As Button
+    Friend WithEvents btnCuentas As Button
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnAceptar As Button
     Friend WithEvents PictureBox1 As PictureBox

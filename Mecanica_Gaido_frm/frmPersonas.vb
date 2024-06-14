@@ -86,8 +86,8 @@ Public Class frmPersonas
         frmEmpleados.ShowDialog()
     End Sub
 
-    Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCtasCtes.Click
-        frmCtasCorrientes.ShowDialog()
+    Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCuentas.Click
+        frmCuentas.ShowDialog()
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
