@@ -53,3 +53,5 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\M
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.exe
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.pdb
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmCuentas.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmRecuperarContraseña.resources
