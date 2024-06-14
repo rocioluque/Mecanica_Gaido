@@ -87,10 +87,10 @@
     <Compile Include="frmCompras.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCtasCorrientes.Designer.vb">
-      <DependentUpon>frmCtasCorrientes.vb</DependentUpon>
+    <Compile Include="frmCuentas.Designer.vb">
+      <DependentUpon>frmCuentas.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCtasCorrientes.vb">
+    <Compile Include="frmCuentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmpleados.Designer.vb">
@@ -121,6 +121,12 @@
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
     <Compile Include="frmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperarContraseña.Designer.vb">
+      <DependentUpon>frmRecuperarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperarContraseña.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmVehiculos.Designer.vb">
@@ -163,6 +169,9 @@
     <EmbeddedResource Include="frmCompras.resx">
       <DependentUpon>frmCompras.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCuentas.resx">
+      <DependentUpon>frmCuentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarContraseña.resx">
+      <DependentUpon>frmRecuperarContraseña.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVehiculos.resx">
       <DependentUpon>frmVehiculos.vb</DependentUpon>

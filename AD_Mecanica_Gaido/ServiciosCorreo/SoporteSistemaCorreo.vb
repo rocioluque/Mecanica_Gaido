@@ -3,10 +3,11 @@
 
     Public Sub New()
         remitenteCorreo = "soportemecanicagaido@gmail.com"
-        contraseña = "MecanicaGaido2024"
+        contraseña = "mecanicagaido"
         host = "smtp.gmail.com"
         port = 587
         ssl = True
+        inicializacionSmtpClient()
     End Sub
 
     Public Sub Notificaciones()
