@@ -9,8 +9,6 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AD_Mecanica_Gaido", "AD_Mec
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Mecanica_Gaido_frm", "Mecanica_Gaido_frm\Mecanica_Gaido_frm.vbproj", "{D67D4DCA-078E-4B30-9B03-B5E2C4D0D048}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Dominio", "Dominio\Dominio.vbproj", "{4CB29826-402C-4D70-9316-CFC1953BCEF3}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Comun_Soporte", "Comun_Soporte\Comun_Soporte.vbproj", "{6F390DC3-4D06-443D-AF66-56E546297FC3}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{D67D4DCA-078E-4B30-9B03-B5E2C4D0D048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D67D4DCA-078E-4B30-9B03-B5E2C4D0D048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D67D4DCA-078E-4B30-9B03-B5E2C4D0D048}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CB29826-402C-4D70-9316-CFC1953BCEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CB29826-402C-4D70-9316-CFC1953BCEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CB29826-402C-4D70-9316-CFC1953BCEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CB29826-402C-4D70-9316-CFC1953BCEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F390DC3-4D06-443D-AF66-56E546297FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F390DC3-4D06-443D-AF66-56E546297FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F390DC3-4D06-443D-AF66-56E546297FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -87,6 +87,18 @@
     <Compile Include="frmCompras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCtasCorrientes.Designer.vb">
+      <DependentUpon>frmCtasCorrientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCtasCorrientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpleados.Designer.vb">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
@@ -148,8 +160,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesReparacion.resx">
+      <DependentUpon>frmOrdenesReparacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPersonas.resx">
       <DependentUpon>frmPersonas.vb</DependentUpon>
@@ -191,13 +209,13 @@
     <Content Include="mg_logo_ico.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AD_Mecanica_Gaido\AD_Mecanica_Gaido.vbproj">
+      <Project>{653d95e6-c213-451f-83c1-eed875107767}</Project>
+      <Name>AD_Mecanica_Gaido</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Comun_Soporte\Comun_Soporte.vbproj">
       <Project>{6f390dc3-4d06-443d-af66-56e546297fc3}</Project>
       <Name>Comun_Soporte</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominio\Dominio.vbproj">
-      <Project>{4cb29826-402c-4d70-9316-cfc1953bcef3}</Project>
-      <Name>Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

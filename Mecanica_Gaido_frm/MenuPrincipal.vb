@@ -9,31 +9,36 @@ Public Class MenuPrincipal
         lblRol.Text = UsuarioActivo.nombre_rol
         lblNombre.Text = UsuarioActivo.nombrePersona & " " & UsuarioActivo.apellidoPersona
         lblCorreo.Text = UsuarioActivo.correoPersona
-
     End Sub
 
     Private Sub btnVehiculos_Click(sender As Object, e As EventArgs) Handles btnVehiculos.Click
         AbrirFormHijo(New frmVehiculos())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnPersonas_Click(sender As Object, e As EventArgs) Handles btnPersonas.Click
         AbrirFormHijo(New frmPersonas())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
         AbrirFormHijo(New frmProductos())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnOrdenReparacón_Click(sender As Object, e As EventArgs) Handles btnOrdenReparacón.Click
         AbrirFormHijo(New frmOrdenesReparacion())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnVentas_Click(sender As Object, e As EventArgs) Handles btnVentas.Click
         AbrirFormHijo(New frmVentas())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnCompras_Click(sender As Object, e As EventArgs) Handles btnCompras.Click
         AbrirFormHijo(New frmCompras())
+        DirectCast(sender, Button).BackColor = Color.SeaGreen
     End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
@@ -88,5 +93,47 @@ Public Class MenuPrincipal
             Me.Close()
         End If
     End Sub
+
+    Private Sub MenuPrincipal_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        ' Verificar si el formulario secundario está actualmente abierto en el panelContenedor
+        If panelContenedor.Controls.Count > 0 AndAlso TypeOf panelContenedor.Controls(0) Is Form Then
+            Dim formularioSecundario As Form = DirectCast(panelContenedor.Controls(0), Form)
+
+            ' Verificar si el formulario principal se está maximizando
+            If WindowState = FormWindowState.Maximized Then
+                ' Ajustar el tamaño y la posición del formulario secundario dentro del panelContenedor
+                formularioSecundario.Dock = DockStyle.Fill
+            Else
+                ' Restaurar el tamaño y la posición del formulario secundario dentro del panelContenedor
+                formularioSecundario.Dock = DockStyle.None
+                formularioSecundario.Size = New Size(panelContenedor.Width, panelContenedor.Height)
+                formularioSecundario.Location = New Point(0, 0)
+            End If
+        End If
+    End Sub
+
+#Region "Control botones"
+    Private Sub btnCompras_Leave(sender As Object, e As EventArgs) Handles btnCompras.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+    Private Sub btnVentas_Leave(sender As Object, e As EventArgs) Handles btnVentas.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+    Private Sub btnOrdenReparacón_Leave(sender As Object, e As EventArgs) Handles btnOrdenReparacón.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+
+    Private Sub btnProductos_Leave(sender As Object, e As EventArgs) Handles btnProductos.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+
+    Private Sub btnPersonas_Leave(sender As Object, e As EventArgs) Handles btnPersonas.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+
+    Private Sub btnVehiculos_Leave(sender As Object, e As EventArgs) Handles btnVehiculos.Leave
+        DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+#End Region
 
 End Class

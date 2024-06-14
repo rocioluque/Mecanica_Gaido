@@ -34,17 +34,11 @@ Partial Class MenuPrincipal
         Me.lblUsuario = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btnCompras = New System.Windows.Forms.Button()
@@ -61,12 +55,6 @@ Partial Class MenuPrincipal
         Me.panelContenedor = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,17 +78,11 @@ Partial Class MenuPrincipal
         Me.PanelMenu.Controls.Add(Me.lblUsuario)
         Me.PanelMenu.Controls.Add(Me.PictureBox8)
         Me.PanelMenu.Controls.Add(Me.btnCerrarSesion)
-        Me.PanelMenu.Controls.Add(Me.PictureBox6)
         Me.PanelMenu.Controls.Add(Me.Panel7)
-        Me.PanelMenu.Controls.Add(Me.PictureBox5)
         Me.PanelMenu.Controls.Add(Me.Panel6)
-        Me.PanelMenu.Controls.Add(Me.PictureBox4)
         Me.PanelMenu.Controls.Add(Me.Panel5)
-        Me.PanelMenu.Controls.Add(Me.PictureBox3)
         Me.PanelMenu.Controls.Add(Me.Panel4)
-        Me.PanelMenu.Controls.Add(Me.PictureBox2)
         Me.PanelMenu.Controls.Add(Me.Panel3)
-        Me.PanelMenu.Controls.Add(Me.PictureBox1)
         Me.PanelMenu.Controls.Add(Me.Panel2)
         Me.PanelMenu.Controls.Add(Me.PictureBox7)
         Me.PanelMenu.Controls.Add(Me.btnCompras)
@@ -232,17 +214,6 @@ Partial Class MenuPrincipal
         Me.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCerrarSesion.UseVisualStyleBackColor = False
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Location = New System.Drawing.Point(5, 314)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox6.TabIndex = 24
-        Me.PictureBox6.TabStop = False
-        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.SeaGreen
@@ -250,17 +221,6 @@ Partial Class MenuPrincipal
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(5, 35)
         Me.Panel7.TabIndex = 23
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(5, 273)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox5.TabIndex = 22
-        Me.PictureBox5.TabStop = False
         '
         'Panel6
         '
@@ -270,17 +230,6 @@ Partial Class MenuPrincipal
         Me.Panel6.Size = New System.Drawing.Size(5, 35)
         Me.Panel6.TabIndex = 21
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(5, 232)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox4.TabIndex = 20
-        Me.PictureBox4.TabStop = False
-        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.SeaGreen
@@ -288,17 +237,6 @@ Partial Class MenuPrincipal
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(5, 35)
         Me.Panel5.TabIndex = 19
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(5, 191)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox3.TabIndex = 18
-        Me.PictureBox3.TabStop = False
         '
         'Panel4
         '
@@ -308,17 +246,6 @@ Partial Class MenuPrincipal
         Me.Panel4.Size = New System.Drawing.Size(5, 35)
         Me.Panel4.TabIndex = 17
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 150)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox2.TabIndex = 16
-        Me.PictureBox2.TabStop = False
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SeaGreen
@@ -326,17 +253,6 @@ Partial Class MenuPrincipal
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(5, 35)
         Me.Panel3.TabIndex = 15
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 109)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox1.TabIndex = 14
-        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -365,7 +281,9 @@ Partial Class MenuPrincipal
         Me.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCompras.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnCompras.ForeColor = System.Drawing.Color.White
-        Me.btnCompras.Location = New System.Drawing.Point(0, 314)
+        Me.btnCompras.Image = CType(resources.GetObject("btnCompras.Image"), System.Drawing.Image)
+        Me.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCompras.Location = New System.Drawing.Point(3, 314)
         Me.btnCompras.Name = "btnCompras"
         Me.btnCompras.Size = New System.Drawing.Size(243, 35)
         Me.btnCompras.TabIndex = 5
@@ -382,7 +300,9 @@ Partial Class MenuPrincipal
         Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductos.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnProductos.ForeColor = System.Drawing.Color.White
-        Me.btnProductos.Location = New System.Drawing.Point(0, 150)
+        Me.btnProductos.Image = CType(resources.GetObject("btnProductos.Image"), System.Drawing.Image)
+        Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProductos.Location = New System.Drawing.Point(2, 150)
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(243, 35)
         Me.btnProductos.TabIndex = 4
@@ -399,8 +319,9 @@ Partial Class MenuPrincipal
         Me.btnVehiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVehiculos.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnVehiculos.ForeColor = System.Drawing.Color.White
+        Me.btnVehiculos.Image = CType(resources.GetObject("btnVehiculos.Image"), System.Drawing.Image)
         Me.btnVehiculos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnVehiculos.Location = New System.Drawing.Point(0, 191)
+        Me.btnVehiculos.Location = New System.Drawing.Point(3, 191)
         Me.btnVehiculos.Name = "btnVehiculos"
         Me.btnVehiculos.Size = New System.Drawing.Size(243, 35)
         Me.btnVehiculos.TabIndex = 3
@@ -417,7 +338,9 @@ Partial Class MenuPrincipal
         Me.btnOrdenReparacón.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOrdenReparacón.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnOrdenReparacón.ForeColor = System.Drawing.Color.White
-        Me.btnOrdenReparacón.Location = New System.Drawing.Point(0, 232)
+        Me.btnOrdenReparacón.Image = CType(resources.GetObject("btnOrdenReparacón.Image"), System.Drawing.Image)
+        Me.btnOrdenReparacón.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnOrdenReparacón.Location = New System.Drawing.Point(3, 232)
         Me.btnOrdenReparacón.Name = "btnOrdenReparacón"
         Me.btnOrdenReparacón.Size = New System.Drawing.Size(243, 35)
         Me.btnOrdenReparacón.TabIndex = 2
@@ -434,7 +357,9 @@ Partial Class MenuPrincipal
         Me.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVentas.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnVentas.ForeColor = System.Drawing.Color.White
-        Me.btnVentas.Location = New System.Drawing.Point(0, 273)
+        Me.btnVentas.Image = CType(resources.GetObject("btnVentas.Image"), System.Drawing.Image)
+        Me.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnVentas.Location = New System.Drawing.Point(3, 273)
         Me.btnVentas.Name = "btnVentas"
         Me.btnVentas.Size = New System.Drawing.Size(243, 35)
         Me.btnVentas.TabIndex = 1
@@ -452,8 +377,9 @@ Partial Class MenuPrincipal
         Me.btnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPersonas.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnPersonas.ForeColor = System.Drawing.Color.White
+        Me.btnPersonas.Image = CType(resources.GetObject("btnPersonas.Image"), System.Drawing.Image)
         Me.btnPersonas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPersonas.Location = New System.Drawing.Point(0, 109)
+        Me.btnPersonas.Location = New System.Drawing.Point(2, 109)
         Me.btnPersonas.Name = "btnPersonas"
         Me.btnPersonas.Size = New System.Drawing.Size(243, 35)
         Me.btnPersonas.TabIndex = 0
@@ -521,7 +447,7 @@ Partial Class MenuPrincipal
         '
         'panelContenedor
         '
-        Me.panelContenedor.BackgroundImage = CType(resources.GetObject("panelContenedor.BackgroundImage"), System.Drawing.Image)
+        Me.panelContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.panelContenedor.Dock = System.Windows.Forms.DockStyle.Right
         Me.panelContenedor.Location = New System.Drawing.Point(245, 30)
@@ -549,12 +475,6 @@ Partial Class MenuPrincipal
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -574,17 +494,11 @@ Partial Class MenuPrincipal
     Friend WithEvents btnCompras As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnMaximizar As PictureBox
     Friend WithEvents btnCerrar As PictureBox
