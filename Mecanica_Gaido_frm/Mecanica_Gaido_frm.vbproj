@@ -51,7 +51,8 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>mg_logo_corto.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -81,6 +82,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAgregarCiudad.Designer.vb">
+      <DependentUpon>frmAgregarCiudad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarCiudad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCompras.Designer.vb">
       <DependentUpon>frmCompras.vb</DependentUpon>
     </Compile>
@@ -141,11 +148,11 @@
     <Compile Include="frmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.vb">
+    <Compile Include="frmMenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.vb">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    <Compile Include="frmMenuPrincipal.Designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -166,11 +173,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAgregarCiudad.resx">
+      <DependentUpon>frmAgregarCiudad.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCompras.resx">
       <DependentUpon>frmCompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCuentas.resx">
       <DependentUpon>frmCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpleados.resx">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
@@ -193,8 +206,8 @@
     <EmbeddedResource Include="frmVentas.resx">
       <DependentUpon>frmVentas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
