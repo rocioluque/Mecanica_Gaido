@@ -59,9 +59,10 @@ Partial Class frmRecuperarContraseña
         '
         'txtIngreseUserCorreo
         '
+        Me.txtIngreseUserCorreo.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIngreseUserCorreo.Location = New System.Drawing.Point(28, 65)
         Me.txtIngreseUserCorreo.Name = "txtIngreseUserCorreo"
-        Me.txtIngreseUserCorreo.Size = New System.Drawing.Size(292, 20)
+        Me.txtIngreseUserCorreo.Size = New System.Drawing.Size(292, 21)
         Me.txtIngreseUserCorreo.TabIndex = 2
         '
         'lblResultado
@@ -97,8 +98,9 @@ Partial Class frmRecuperarContraseña
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEnviar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmRecuperarContraseña"
-        Me.Text = "frmRecuperarContraseña"
+        Me.Text = "Recuperar Contraseña"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

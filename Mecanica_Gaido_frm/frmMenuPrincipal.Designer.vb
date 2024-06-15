@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MenuPrincipal
+Partial Class frmMenuPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class MenuPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMenuPrincipal))
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -32,7 +32,6 @@ Partial Class MenuPrincipal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblRol = New System.Windows.Forms.Label()
         Me.lblUsuario = New System.Windows.Forms.Label()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -54,7 +53,6 @@ Partial Class MenuPrincipal
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.panelContenedor = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,7 +74,6 @@ Partial Class MenuPrincipal
         Me.PanelMenu.Controls.Add(Me.Label2)
         Me.PanelMenu.Controls.Add(Me.lblRol)
         Me.PanelMenu.Controls.Add(Me.lblUsuario)
-        Me.PanelMenu.Controls.Add(Me.PictureBox8)
         Me.PanelMenu.Controls.Add(Me.btnCerrarSesion)
         Me.PanelMenu.Controls.Add(Me.Panel7)
         Me.PanelMenu.Controls.Add(Me.Panel6)
@@ -93,7 +90,7 @@ Partial Class MenuPrincipal
         Me.PanelMenu.Controls.Add(Me.btnPersonas)
         Me.PanelMenu.Location = New System.Drawing.Point(0, 22)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(245, 630)
+        Me.PanelMenu.Size = New System.Drawing.Size(240, 630)
         Me.PanelMenu.TabIndex = 0
         '
         'Label3
@@ -184,21 +181,8 @@ Partial Class MenuPrincipal
         Me.lblUsuario.TabIndex = 27
         Me.lblUsuario.Text = ":"
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.BackgroundImage = CType(resources.GetObject("PictureBox8.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox8.Location = New System.Drawing.Point(5, 581)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(30, 35)
-        Me.PictureBox8.TabIndex = 26
-        Me.PictureBox8.TabStop = False
-        '
         'btnCerrarSesion
         '
-        Me.btnCerrarSesion.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCerrarSesion.FlatAppearance.BorderSize = 0
@@ -206,11 +190,13 @@ Partial Class MenuPrincipal
         Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrarSesion.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.btnCerrarSesion.ForeColor = System.Drawing.Color.White
-        Me.btnCerrarSesion.Location = New System.Drawing.Point(28, 581)
+        Me.btnCerrarSesion.Image = CType(resources.GetObject("btnCerrarSesion.Image"), System.Drawing.Image)
+        Me.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 581)
         Me.btnCerrarSesion.Name = "btnCerrarSesion"
-        Me.btnCerrarSesion.Size = New System.Drawing.Size(215, 35)
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(243, 35)
         Me.btnCerrarSesion.TabIndex = 25
-        Me.btnCerrarSesion.Text = "Cerrar Sesión"
+        Me.btnCerrarSesion.Text = "        Cerrar Sesión"
         Me.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCerrarSesion.UseVisualStyleBackColor = False
         '
@@ -450,12 +436,12 @@ Partial Class MenuPrincipal
         Me.panelContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.panelContenedor.Dock = System.Windows.Forms.DockStyle.Right
-        Me.panelContenedor.Location = New System.Drawing.Point(245, 30)
+        Me.panelContenedor.Location = New System.Drawing.Point(240, 30)
         Me.panelContenedor.Name = "panelContenedor"
-        Me.panelContenedor.Size = New System.Drawing.Size(955, 620)
+        Me.panelContenedor.Size = New System.Drawing.Size(960, 620)
         Me.panelContenedor.TabIndex = 2
         '
-        'MenuPrincipal
+        'frmMenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -469,12 +455,11 @@ Partial Class MenuPrincipal
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "MenuPrincipal"
+        Me.Name = "frmMenuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mecánica Gaido - Menu Principal"
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -505,7 +490,6 @@ Partial Class MenuPrincipal
     Friend WithEvents btnRestaurar As PictureBox
     Friend WithEvents btnMinimizar As PictureBox
     Friend WithEvents panelContenedor As Panel
-    Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents lblRol As Label
     Friend WithEvents lblUsuario As Label

@@ -22,7 +22,8 @@ Partial Class frmCompras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.grbGrilla = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCompras))
+        Me.grdCompras = New System.Windows.Forms.DataGridView()
         Me.chkEstado = New System.Windows.Forms.CheckBox()
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.txtOtrosimp = New System.Windows.Forms.TextBox()
@@ -44,19 +45,30 @@ Partial Class frmCompras
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.grbGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnAgregarUsuario = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnModificar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        CType(Me.grdCompras, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'grbGrilla
+        'grdCompras
         '
-        Me.grbGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grbGrilla.Location = New System.Drawing.Point(46, 321)
-        Me.grbGrilla.Margin = New System.Windows.Forms.Padding(2)
-        Me.grbGrilla.Name = "grbGrilla"
-        Me.grbGrilla.RowHeadersWidth = 51
-        Me.grbGrilla.RowTemplate.Height = 24
-        Me.grbGrilla.Size = New System.Drawing.Size(838, 206)
-        Me.grbGrilla.TabIndex = 45
+        Me.grdCompras.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.grdCompras.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.grdCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdCompras.Location = New System.Drawing.Point(46, 321)
+        Me.grdCompras.Margin = New System.Windows.Forms.Padding(2)
+        Me.grdCompras.Name = "grdCompras"
+        Me.grdCompras.ReadOnly = True
+        Me.grdCompras.RowHeadersWidth = 51
+        Me.grdCompras.RowTemplate.Height = 24
+        Me.grdCompras.Size = New System.Drawing.Size(838, 220)
+        Me.grdCompras.TabIndex = 45
         '
         'chkEstado
         '
@@ -76,7 +88,7 @@ Partial Class frmCompras
         Me.txtTotal.Location = New System.Drawing.Point(524, 224)
         Me.txtTotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(92, 20)
+        Me.txtTotal.Size = New System.Drawing.Size(123, 20)
         Me.txtTotal.TabIndex = 43
         '
         'txtOtrosimp
@@ -84,7 +96,7 @@ Partial Class frmCompras
         Me.txtOtrosimp.Location = New System.Drawing.Point(524, 179)
         Me.txtOtrosimp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtOtrosimp.Name = "txtOtrosimp"
-        Me.txtOtrosimp.Size = New System.Drawing.Size(92, 20)
+        Me.txtOtrosimp.Size = New System.Drawing.Size(123, 20)
         Me.txtOtrosimp.TabIndex = 42
         '
         'txtIvamonto
@@ -92,7 +104,7 @@ Partial Class frmCompras
         Me.txtIvamonto.Location = New System.Drawing.Point(524, 134)
         Me.txtIvamonto.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIvamonto.Name = "txtIvamonto"
-        Me.txtIvamonto.Size = New System.Drawing.Size(92, 20)
+        Me.txtIvamonto.Size = New System.Drawing.Size(123, 20)
         Me.txtIvamonto.TabIndex = 41
         '
         'txtIva
@@ -100,7 +112,7 @@ Partial Class frmCompras
         Me.txtIva.Location = New System.Drawing.Point(524, 89)
         Me.txtIva.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIva.Name = "txtIva"
-        Me.txtIva.Size = New System.Drawing.Size(92, 20)
+        Me.txtIva.Size = New System.Drawing.Size(123, 20)
         Me.txtIva.TabIndex = 40
         '
         'txtSubtotal
@@ -108,7 +120,7 @@ Partial Class frmCompras
         Me.txtSubtotal.Location = New System.Drawing.Point(524, 44)
         Me.txtSubtotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSubtotal.Name = "txtSubtotal"
-        Me.txtSubtotal.Size = New System.Drawing.Size(92, 20)
+        Me.txtSubtotal.Size = New System.Drawing.Size(123, 20)
         Me.txtSubtotal.TabIndex = 39
         '
         'txtNumcomp
@@ -116,7 +128,7 @@ Partial Class frmCompras
         Me.txtNumcomp.Location = New System.Drawing.Point(165, 134)
         Me.txtNumcomp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNumcomp.Name = "txtNumcomp"
-        Me.txtNumcomp.Size = New System.Drawing.Size(92, 20)
+        Me.txtNumcomp.Size = New System.Drawing.Size(123, 20)
         Me.txtNumcomp.TabIndex = 38
         '
         'txtFechacompra
@@ -124,7 +136,7 @@ Partial Class frmCompras
         Me.txtFechacompra.Location = New System.Drawing.Point(165, 89)
         Me.txtFechacompra.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFechacompra.Name = "txtFechacompra"
-        Me.txtFechacompra.Size = New System.Drawing.Size(92, 20)
+        Me.txtFechacompra.Size = New System.Drawing.Size(123, 20)
         Me.txtFechacompra.TabIndex = 37
         '
         'txtID
@@ -132,16 +144,17 @@ Partial Class frmCompras
         Me.txtID.Location = New System.Drawing.Point(165, 44)
         Me.txtID.Margin = New System.Windows.Forms.Padding(2)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(92, 20)
+        Me.txtID.Size = New System.Drawing.Size(46, 20)
         Me.txtID.TabIndex = 36
         '
         'cmbFormapago
         '
+        Me.cmbFormapago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbFormapago.FormattingEnabled = True
         Me.cmbFormapago.Location = New System.Drawing.Point(165, 223)
         Me.cmbFormapago.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbFormapago.Name = "cmbFormapago"
-        Me.cmbFormapago.Size = New System.Drawing.Size(92, 21)
+        Me.cmbFormapago.Size = New System.Drawing.Size(123, 21)
         Me.cmbFormapago.TabIndex = 35
         '
         'cmbProveedor
@@ -150,7 +163,7 @@ Partial Class frmCompras
         Me.cmbProveedor.Location = New System.Drawing.Point(165, 179)
         Me.cmbProveedor.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbProveedor.Name = "cmbProveedor"
-        Me.cmbProveedor.Size = New System.Drawing.Size(92, 21)
+        Me.cmbProveedor.Size = New System.Drawing.Size(123, 21)
         Me.cmbProveedor.TabIndex = 34
         '
         'Label11
@@ -158,7 +171,7 @@ Partial Class frmCompras
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(396, 227)
+        Me.Label11.Location = New System.Drawing.Point(398, 227)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(39, 17)
@@ -206,7 +219,7 @@ Partial Class frmCompras
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(396, 47)
+        Me.Label7.Location = New System.Drawing.Point(398, 45)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(62, 17)
@@ -273,6 +286,95 @@ Partial Class frmCompras
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "ID"
         '
+        'btnAgregarUsuario
+        '
+        Me.btnAgregarUsuario.BackgroundImage = CType(resources.GetObject("btnAgregarUsuario.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarUsuario.Location = New System.Drawing.Point(295, 179)
+        Me.btnAgregarUsuario.Name = "btnAgregarUsuario"
+        Me.btnAgregarUsuario.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarUsuario.TabIndex = 87
+        Me.btnAgregarUsuario.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(295, 223)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 21)
+        Me.PictureBox1.TabIndex = 88
+        Me.PictureBox1.TabStop = False
+        '
+        'btnModificar
+        '
+        Me.btnModificar.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnModificar.FlatAppearance.BorderSize = 2
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.ForeColor = System.Drawing.Color.White
+        Me.btnModificar.Location = New System.Drawing.Point(755, 126)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(117, 37)
+        Me.btnModificar.TabIndex = 92
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = False
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCancelar.FlatAppearance.BorderSize = 2
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Location = New System.Drawing.Point(755, 207)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
+        Me.btnCancelar.TabIndex = 91
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.BackColor = System.Drawing.Color.Transparent
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnAceptar.FlatAppearance.BorderSize = 2
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.White
+        Me.btnAceptar.Location = New System.Drawing.Point(755, 45)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
+        Me.btnAceptar.TabIndex = 90
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnBuscar.FlatAppearance.BorderSize = 2
+        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscar.ForeColor = System.Drawing.Color.White
+        Me.btnBuscar.Location = New System.Drawing.Point(238, 38)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(50, 28)
+        Me.btnBuscar.TabIndex = 89
+        Me.btnBuscar.Text = "..."
+        Me.btnBuscar.UseVisualStyleBackColor = False
+        '
         'frmCompras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -280,7 +382,13 @@ Partial Class frmCompras
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(939, 581)
-        Me.Controls.Add(Me.grbGrilla)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnAgregarUsuario)
+        Me.Controls.Add(Me.grdCompras)
         Me.Controls.Add(Me.chkEstado)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.txtOtrosimp)
@@ -304,16 +412,19 @@ Partial Class frmCompras
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmCompras"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmCompras"
-        CType(Me.grbGrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdCompras, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarUsuario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents grbGrilla As DataGridView
+    Friend WithEvents grdCompras As DataGridView
     Friend WithEvents chkEstado As CheckBox
     Friend WithEvents txtTotal As TextBox
     Friend WithEvents txtOtrosimp As TextBox
@@ -335,4 +446,10 @@ Partial Class frmCompras
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnAgregarUsuario As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnBuscar As Button
 End Class
