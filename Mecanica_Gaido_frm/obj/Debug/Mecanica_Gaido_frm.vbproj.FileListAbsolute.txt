@@ -45,7 +45,6 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\M
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmProductos.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmVehiculos.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmVentas.resources
-C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.MenuPrincipal.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.Resources.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.vbproj.GenerateResource.cache
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.vbproj.CoreCompileInputs.cache
@@ -55,3 +54,6 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\M
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.pdb
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmCuentas.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmRecuperarContraseña.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmMenuPrincipal.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmAgregarCiudad.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmEmpleados.resources

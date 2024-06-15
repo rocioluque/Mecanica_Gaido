@@ -22,10 +22,11 @@ Partial Class frmProductos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmProductos))
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnCargar = New System.Windows.Forms.Button()
-        Me.grdGrillaProductos = New System.Windows.Forms.DataGridView()
+        Me.grdProductos = New System.Windows.Forms.DataGridView()
         Me.chkActivo = New System.Windows.Forms.CheckBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -67,7 +68,7 @@ Partial Class frmProductos
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUtilidad = New System.Windows.Forms.TextBox()
-        CType(Me.grdGrillaProductos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.grdProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnModificar
@@ -100,15 +101,16 @@ Partial Class frmProductos
         Me.btnCargar.Text = "CARGAR"
         Me.btnCargar.UseVisualStyleBackColor = True
         '
-        'grdGrillaProductos
+        'grdProductos
         '
-        Me.grdGrillaProductos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.grdGrillaProductos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.grdGrillaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grdGrillaProductos.Location = New System.Drawing.Point(42, 379)
-        Me.grdGrillaProductos.Name = "grdGrillaProductos"
-        Me.grdGrillaProductos.Size = New System.Drawing.Size(868, 150)
-        Me.grdGrillaProductos.TabIndex = 93
+        Me.grdProductos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.grdProductos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.grdProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdProductos.Location = New System.Drawing.Point(42, 379)
+        Me.grdProductos.Name = "grdProductos"
+        Me.grdProductos.ReadOnly = True
+        Me.grdProductos.Size = New System.Drawing.Size(868, 209)
+        Me.grdProductos.TabIndex = 93
         '
         'chkActivo
         '
@@ -511,7 +513,7 @@ Partial Class frmProductos
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnCargar)
-        Me.Controls.Add(Me.grdGrillaProductos)
+        Me.Controls.Add(Me.grdProductos)
         Me.Controls.Add(Me.chkActivo)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
@@ -550,10 +552,11 @@ Partial Class frmProductos
         Me.Controls.Add(Me.cboRubro)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmProductos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmProductos"
-        CType(Me.grdGrillaProductos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Productos"
+        CType(Me.grdProductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -562,7 +565,7 @@ Partial Class frmProductos
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnCargar As Button
-    Friend WithEvents grdGrillaProductos As DataGridView
+    Friend WithEvents grdProductos As DataGridView
     Friend WithEvents chkActivo As CheckBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
