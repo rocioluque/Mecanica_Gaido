@@ -3,7 +3,7 @@ Imports System.Runtime.InteropServices
 Imports Dominio
 Imports Comun_Soporte
 
-Public Class MenuPrincipal
+Public Class frmMenuPrincipal
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
         lblUsuario.Text = UsuarioActivo.usuario
         lblRol.Text = UsuarioActivo.nombre_rol
@@ -134,6 +134,8 @@ Public Class MenuPrincipal
     Private Sub btnVehiculos_Leave(sender As Object, e As EventArgs) Handles btnVehiculos.Leave
         DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
     End Sub
+
+
 #End Region
 
 End Class

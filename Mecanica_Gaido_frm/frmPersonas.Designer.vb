@@ -45,12 +45,12 @@ Partial Class frmPersonas
         Me.btnCuentas = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarCiudad = New System.Windows.Forms.PictureBox()
         Me.txtNota = New System.Windows.Forms.RichTextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.grdPersonas = New System.Windows.Forms.DataGridView()
         Me.btnModificar = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarCiudad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grdPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -271,7 +271,7 @@ Partial Class frmPersonas
         Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEmpleados.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEmpleados.ForeColor = System.Drawing.Color.White
-        Me.btnEmpleados.Location = New System.Drawing.Point(728, 24)
+        Me.btnEmpleados.Location = New System.Drawing.Point(749, 35)
         Me.btnEmpleados.Name = "btnEmpleados"
         Me.btnEmpleados.Size = New System.Drawing.Size(117, 37)
         Me.btnEmpleados.TabIndex = 41
@@ -288,7 +288,7 @@ Partial Class frmPersonas
         Me.btnCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCuentas.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCuentas.ForeColor = System.Drawing.Color.White
-        Me.btnCuentas.Location = New System.Drawing.Point(588, 24)
+        Me.btnCuentas.Location = New System.Drawing.Point(609, 35)
         Me.btnCuentas.Name = "btnCuentas"
         Me.btnCuentas.Size = New System.Drawing.Size(117, 37)
         Me.btnCuentas.TabIndex = 40
@@ -306,7 +306,7 @@ Partial Class frmPersonas
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(728, 80)
+        Me.btnCancelar.Location = New System.Drawing.Point(749, 91)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
         Me.btnCancelar.TabIndex = 43
@@ -323,22 +323,22 @@ Partial Class frmPersonas
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Location = New System.Drawing.Point(588, 80)
+        Me.btnAceptar.Location = New System.Drawing.Point(609, 91)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
         Me.btnAceptar.TabIndex = 42
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'btnAgregarCiudad
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(533, 113)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(26, 25)
-        Me.PictureBox1.TabIndex = 44
-        Me.PictureBox1.TabStop = False
+        Me.btnAgregarCiudad.BackgroundImage = CType(resources.GetObject("btnAgregarCiudad.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarCiudad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarCiudad.Location = New System.Drawing.Point(533, 113)
+        Me.btnAgregarCiudad.Name = "btnAgregarCiudad"
+        Me.btnAgregarCiudad.Size = New System.Drawing.Size(26, 25)
+        Me.btnAgregarCiudad.TabIndex = 44
+        Me.btnAgregarCiudad.TabStop = False
         '
         'txtNota
         '
@@ -360,6 +360,7 @@ Partial Class frmPersonas
         'grdPersonas
         '
         Me.grdPersonas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.grdPersonas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.grdPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdPersonas.Location = New System.Drawing.Point(66, 298)
         Me.grdPersonas.Name = "grdPersonas"
@@ -377,7 +378,7 @@ Partial Class frmPersonas
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.ForeColor = System.Drawing.Color.White
-        Me.btnModificar.Location = New System.Drawing.Point(656, 136)
+        Me.btnModificar.Location = New System.Drawing.Point(609, 147)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(117, 37)
         Me.btnModificar.TabIndex = 48
@@ -395,7 +396,7 @@ Partial Class frmPersonas
         Me.Controls.Add(Me.grdPersonas)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtNota)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnAgregarCiudad)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnEmpleados)
@@ -424,7 +425,7 @@ Partial Class frmPersonas
         Me.Name = "frmPersonas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmPersonas"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarCiudad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grdPersonas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -452,7 +453,7 @@ Partial Class frmPersonas
     Friend WithEvents btnCuentas As Button
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnAceptar As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnAgregarCiudad As PictureBox
     Friend WithEvents txtNota As RichTextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents grdPersonas As DataGridView

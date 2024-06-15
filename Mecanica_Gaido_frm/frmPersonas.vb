@@ -12,13 +12,14 @@ Public Class frmPersonas
 
     Private Sub Cargar_Provincias()
         Try
-            Dim o_Personas As New AD_Personas
             Dim tabla As DataTable = o_Personas.Cargar_Provincias()
 
             If tabla.Rows.Count > 0 Then
                 cboProvincia.DataSource = tabla
                 cboProvincia.DisplayMember = "Nombre"
                 cboProvincia.ValueMember = "ID_Provincia"
+            Else
+                MsgBox("No se encontraron provincias.", vbInformation, "Información")
             End If
 
         Catch ex As Exception
@@ -34,12 +35,15 @@ Public Class frmPersonas
                 cboCiudad.DataSource = tabla
                 cboCiudad.DisplayMember = "Ciudad"
                 cboCiudad.ValueMember = "ID_Ciudad"
+            Else
+                MsgBox("No se encontraron ciudades para la provincia seleccionada.", vbInformation, "Información")
             End If
 
         Catch ex As Exception
             MsgBox("Error al cargar las ciudades: " & ex.Message, vbCritical, "Error")
         End Try
     End Sub
+
     Private Sub cboProvincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboProvincia.SelectedIndexChanged
         Try
             If cboProvincia.SelectedValue IsNot Nothing Then
@@ -81,13 +85,51 @@ Public Class frmPersonas
         conexion.Close()
     End Sub
 
+    Public Sub CargarDatosEnTextBoxes(ByVal rowIndex As Integer)
+        If grdPersonas.Rows.Count > 0 Then
+            txtID.Text = grdPersonas.Rows(rowIndex).Cells("N° Persona").Value.ToString()
+            txtNombre.Text = grdPersonas.Rows(rowIndex).Cells("Nombre").Value.ToString()
+            txtApellido.Text = grdPersonas.Rows(rowIndex).Cells("Apellido").Value.ToString()
+            txtTelefono.Text = grdPersonas.Rows(rowIndex).Cells("Telefono").Value.ToString()
+            txtCorreo.Text = grdPersonas.Rows(rowIndex).Cells("Correo").Value.ToString()
+            txtDireccion.Text = grdPersonas.Rows(rowIndex).Cells("Direccion").Value.ToString()
+            txtNota.Text = grdPersonas.Rows(rowIndex).Cells("Nota").Value.ToString()
+            chkEstado.Checked = grdPersonas.Rows(rowIndex).Cells("Estado").Value.ToString()
 
+            ' Buscar y seleccionar la provincia en el ComboBox
+            Dim provincia As String = grdPersonas.Rows(rowIndex).Cells("Provincia").Value.ToString()
+            For Each item As DataRowView In cboProvincia.Items
+                If item("Nombre").ToString() = provincia Then
+                    cboProvincia.SelectedValue = item("ID_Provincia")
+                    Exit For
+                End If
+            Next
+
+            ' Cargar y seleccionar la ciudad en el ComboBox basado en la provincia seleccionada
+            If cboProvincia.SelectedValue IsNot Nothing AndAlso IsNumeric(cboProvincia.SelectedValue) Then
+                Dim idProvincia As Integer = Convert.ToInt32(cboProvincia.SelectedValue)
+                Cargar_Ciudades(idProvincia)
+                Dim ciudad As String = grdPersonas.Rows(rowIndex).Cells("Ciudad").Value.ToString()
+                For Each item As DataRowView In cboCiudad.Items
+                    If item("Ciudad").ToString() = ciudad Then
+                        cboCiudad.SelectedValue = item("ID_Ciudad")
+                        Exit For
+                    End If
+                Next
+            End If
+        End If
+    End Sub
+    Private Sub grdPersonas_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles grdPersonas.CellClick
+        If e.RowIndex >= 0 Then
+            CargarDatosEnTextBoxes(e.RowIndex)
+        End If
+    End Sub
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         frmEmpleados.ShowDialog()
     End Sub
 
     Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCuentas.Click
-        frmCuentas.ShowDialog()
+        txtCargo.ShowDialog()
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
@@ -141,5 +183,29 @@ Public Class frmPersonas
         Else
             MsgBox("Complete Datos", vbInformation, "Error")
         End If
+    End Sub
+
+    Private Sub btnAgregarCiudad_Click(sender As Object, e As EventArgs) Handles btnAgregarCiudad.Click
+        frmAgregarCiudad.ShowDialog()
+    End Sub
+
+    Private Sub txtDireccion_TextChanged(sender As Object, e As EventArgs) Handles txtDireccion.TextChanged
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub cboCiudad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCiudad.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
     End Sub
 End Class

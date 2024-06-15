@@ -23,12 +23,7 @@ Partial Class frmOrdenesReparacion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOrdenesReparacion))
-        Me.btnModificar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnCargar = New System.Windows.Forms.Button()
-        Me.grdGrilla = New System.Windows.Forms.DataGridView()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.grdOrdenReparacion = New System.Windows.Forms.DataGridView()
         Me.chkActivo = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -37,131 +32,103 @@ Partial Class frmOrdenesReparacion
         Me.txtFechaentrada = New System.Windows.Forms.TextBox()
         Me.txtFechaturno = New System.Windows.Forms.TextBox()
         Me.cboVehiculo = New System.Windows.Forms.ComboBox()
-        Me.cboOrdenes = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboServicios = New System.Windows.Forms.ComboBox()
         Me.cboCliente = New System.Windows.Forms.ComboBox()
         Me.txtMotivo = New System.Windows.Forms.TextBox()
-        Me.txtSeñas = New System.Windows.Forms.TextBox()
+        Me.txtSeñasParticulares = New System.Windows.Forms.TextBox()
         Me.txtFechaestimada = New System.Windows.Forms.TextBox()
         Me.txtFechasalida = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lbl1 = New System.Windows.Forms.Label()
-        CType(Me.grdGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnModificar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        CType(Me.grdOrdenReparacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnModificar
+        'grdOrdenReparacion
         '
-        Me.btnModificar.Location = New System.Drawing.Point(330, 308)
-        Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnModificar.TabIndex = 93
-        Me.btnModificar.Text = "MODIFICAR"
-        Me.btnModificar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Location = New System.Drawing.Point(411, 308)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminar.TabIndex = 92
-        Me.btnEliminar.Text = "ELIMINAR"
-        Me.btnEliminar.UseVisualStyleBackColor = True
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.Location = New System.Drawing.Point(492, 308)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBuscar.TabIndex = 91
-        Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
-        '
-        'btnCargar
-        '
-        Me.btnCargar.Location = New System.Drawing.Point(249, 308)
-        Me.btnCargar.Name = "btnCargar"
-        Me.btnCargar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCargar.TabIndex = 90
-        Me.btnCargar.Text = "CARGAR"
-        Me.btnCargar.UseVisualStyleBackColor = True
-        '
-        'grdGrilla
-        '
-        Me.grdGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grdGrilla.Location = New System.Drawing.Point(30, 337)
-        Me.grdGrilla.Name = "grdGrilla"
-        Me.grdGrilla.Size = New System.Drawing.Size(784, 150)
-        Me.grdGrilla.TabIndex = 89
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(27, 314)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 13)
-        Me.Label6.TabIndex = 88
-        Me.Label6.Text = "Estado:"
+        Me.grdOrdenReparacion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.grdOrdenReparacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.grdOrdenReparacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdOrdenReparacion.Location = New System.Drawing.Point(54, 338)
+        Me.grdOrdenReparacion.Name = "grdOrdenReparacion"
+        Me.grdOrdenReparacion.ReadOnly = True
+        Me.grdOrdenReparacion.Size = New System.Drawing.Size(843, 241)
+        Me.grdOrdenReparacion.TabIndex = 89
         '
         'chkActivo
         '
         Me.chkActivo.AutoSize = True
-        Me.chkActivo.Location = New System.Drawing.Point(122, 314)
+        Me.chkActivo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkActivo.ForeColor = System.Drawing.Color.White
+        Me.chkActivo.Location = New System.Drawing.Point(394, 245)
         Me.chkActivo.Name = "chkActivo"
-        Me.chkActivo.Size = New System.Drawing.Size(59, 17)
+        Me.chkActivo.Size = New System.Drawing.Size(85, 21)
         Me.chkActivo.TabIndex = 87
-        Me.chkActivo.Text = "Activo."
+        Me.chkActivo.Text = "¿Activo?"
         Me.chkActivo.UseVisualStyleBackColor = True
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(28, 290)
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(391, 207)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 13)
+        Me.Label5.Size = New System.Drawing.Size(138, 17)
         Me.Label5.TabIndex = 86
-        Me.Label5.Text = "ID_Serv.Terceros:"
+        Me.Label5.Text = "Servicios de terceros"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(27, 237)
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(391, 123)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 13)
+        Me.Label4.Size = New System.Drawing.Size(110, 17)
         Me.Label4.TabIndex = 85
-        Me.Label4.Text = "Fecha Salida:"
+        Me.Label4.Text = "Fecha de salida"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(27, 211)
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(391, 81)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 13)
+        Me.Label3.Size = New System.Drawing.Size(154, 17)
         Me.Label3.TabIndex = 84
-        Me.Label3.Text = "Fech.Est.Salida:"
+        Me.Label3.Text = "Fecha Estimada Salida"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 185)
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(391, 38)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 13)
+        Me.Label2.Size = New System.Drawing.Size(102, 17)
         Me.Label2.TabIndex = 83
-        Me.Label2.Text = "Fecha Entrada:"
+        Me.Label2.Text = "Fecha Entrada"
         '
         'txtFechaentrada
         '
-        Me.txtFechaentrada.Location = New System.Drawing.Point(122, 182)
+        Me.txtFechaentrada.Location = New System.Drawing.Point(569, 37)
         Me.txtFechaentrada.Name = "txtFechaentrada"
         Me.txtFechaentrada.Size = New System.Drawing.Size(121, 20)
         Me.txtFechaentrada.TabIndex = 82
         '
         'txtFechaturno
         '
-        Me.txtFechaturno.Location = New System.Drawing.Point(122, 156)
+        Me.txtFechaturno.Location = New System.Drawing.Point(205, 207)
         Me.txtFechaturno.Name = "txtFechaturno"
         Me.txtFechaturno.Size = New System.Drawing.Size(121, 20)
         Me.txtFechaturno.TabIndex = 81
@@ -169,50 +136,48 @@ Partial Class frmOrdenesReparacion
         'cboVehiculo
         '
         Me.cboVehiculo.FormattingEnabled = True
-        Me.cboVehiculo.Location = New System.Drawing.Point(122, 77)
+        Me.cboVehiculo.Location = New System.Drawing.Point(206, 80)
         Me.cboVehiculo.Name = "cboVehiculo"
         Me.cboVehiculo.Size = New System.Drawing.Size(121, 21)
         Me.cboVehiculo.TabIndex = 80
         '
-        'cboOrdenes
-        '
-        Me.cboOrdenes.FormattingEnabled = True
-        Me.cboOrdenes.Location = New System.Drawing.Point(122, 51)
-        Me.cboOrdenes.Name = "cboOrdenes"
-        Me.cboOrdenes.Size = New System.Drawing.Size(121, 21)
-        Me.cboOrdenes.TabIndex = 79
-        '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(27, 263)
+        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(391, 165)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(59, 13)
+        Me.Label12.Size = New System.Drawing.Size(57, 17)
         Me.Label12.TabIndex = 78
-        Me.Label12.Text = "ID_Cliente:"
+        Me.Label12.Text = "Cuenta"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(27, 160)
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(51, 208)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(71, 13)
+        Me.Label10.Size = New System.Drawing.Size(109, 17)
         Me.Label10.TabIndex = 77
-        Me.Label10.Text = "Fecha Turno:"
+        Me.Label10.Text = "Fecha del turno"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 133)
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(51, 165)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 13)
+        Me.Label1.Size = New System.Drawing.Size(149, 17)
         Me.Label1.TabIndex = 76
-        Me.Label1.Text = "Mot. Reparacion:"
+        Me.Label1.Text = "Motivo de reparación"
         '
         'cboServicios
         '
         Me.cboServicios.FormattingEnabled = True
-        Me.cboServicios.Location = New System.Drawing.Point(122, 287)
+        Me.cboServicios.Location = New System.Drawing.Point(569, 206)
         Me.cboServicios.Name = "cboServicios"
         Me.cboServicios.Size = New System.Drawing.Size(121, 21)
         Me.cboServicios.TabIndex = 75
@@ -220,35 +185,35 @@ Partial Class frmOrdenesReparacion
         'cboCliente
         '
         Me.cboCliente.FormattingEnabled = True
-        Me.cboCliente.Location = New System.Drawing.Point(122, 260)
+        Me.cboCliente.Location = New System.Drawing.Point(569, 164)
         Me.cboCliente.Name = "cboCliente"
         Me.cboCliente.Size = New System.Drawing.Size(121, 21)
         Me.cboCliente.TabIndex = 74
         '
         'txtMotivo
         '
-        Me.txtMotivo.Location = New System.Drawing.Point(122, 130)
+        Me.txtMotivo.Location = New System.Drawing.Point(206, 164)
         Me.txtMotivo.Name = "txtMotivo"
         Me.txtMotivo.Size = New System.Drawing.Size(121, 20)
         Me.txtMotivo.TabIndex = 73
         '
-        'txtSeñas
+        'txtSeñasParticulares
         '
-        Me.txtSeñas.Location = New System.Drawing.Point(122, 104)
-        Me.txtSeñas.Name = "txtSeñas"
-        Me.txtSeñas.Size = New System.Drawing.Size(121, 20)
-        Me.txtSeñas.TabIndex = 72
+        Me.txtSeñasParticulares.Location = New System.Drawing.Point(205, 122)
+        Me.txtSeñasParticulares.Name = "txtSeñasParticulares"
+        Me.txtSeñasParticulares.Size = New System.Drawing.Size(121, 20)
+        Me.txtSeñasParticulares.TabIndex = 72
         '
         'txtFechaestimada
         '
-        Me.txtFechaestimada.Location = New System.Drawing.Point(122, 208)
+        Me.txtFechaestimada.Location = New System.Drawing.Point(569, 80)
         Me.txtFechaestimada.Name = "txtFechaestimada"
         Me.txtFechaestimada.Size = New System.Drawing.Size(121, 20)
         Me.txtFechaestimada.TabIndex = 71
         '
         'txtFechasalida
         '
-        Me.txtFechasalida.Location = New System.Drawing.Point(122, 234)
+        Me.txtFechasalida.Location = New System.Drawing.Point(569, 122)
         Me.txtFechasalida.Name = "txtFechasalida"
         Me.txtFechasalida.Size = New System.Drawing.Size(121, 20)
         Me.txtFechasalida.TabIndex = 70
@@ -256,44 +221,125 @@ Partial Class frmOrdenesReparacion
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(27, 81)
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(51, 81)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(68, 13)
+        Me.Label8.Size = New System.Drawing.Size(64, 17)
         Me.Label8.TabIndex = 69
-        Me.Label8.Text = "ID_Vehiculo:"
+        Me.Label8.Text = "Vehiculo"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(27, 107)
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(51, 123)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(98, 13)
+        Me.Label7.Size = New System.Drawing.Size(122, 17)
         Me.Label7.TabIndex = 68
-        Me.Label7.Text = "Señas Particulares:"
+        Me.Label7.Text = "Señas Particulares"
         '
         'lbl1
         '
         Me.lbl1.AutoSize = True
-        Me.lbl1.Location = New System.Drawing.Point(27, 54)
+        Me.lbl1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl1.ForeColor = System.Drawing.Color.White
+        Me.lbl1.Location = New System.Drawing.Point(51, 38)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(69, 13)
+        Me.lbl1.Size = New System.Drawing.Size(21, 17)
         Me.lbl1.TabIndex = 67
-        Me.lbl1.Text = "ID_Ord/Rep:"
+        Me.lbl1.Text = "ID"
+        '
+        'btnModificar
+        '
+        Me.btnModificar.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnModificar.FlatAppearance.BorderSize = 2
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.ForeColor = System.Drawing.Color.White
+        Me.btnModificar.Location = New System.Drawing.Point(763, 118)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(117, 37)
+        Me.btnModificar.TabIndex = 93
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = False
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCancelar.FlatAppearance.BorderSize = 2
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Location = New System.Drawing.Point(763, 165)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
+        Me.btnCancelar.TabIndex = 92
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.BackColor = System.Drawing.Color.Transparent
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnAceptar.FlatAppearance.BorderSize = 2
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.White
+        Me.btnAceptar.Location = New System.Drawing.Point(763, 71)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
+        Me.btnAceptar.TabIndex = 91
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnBuscar.FlatAppearance.BorderSize = 2
+        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscar.ForeColor = System.Drawing.Color.White
+        Me.btnBuscar.Location = New System.Drawing.Point(276, 31)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(50, 28)
+        Me.btnBuscar.TabIndex = 90
+        Me.btnBuscar.Text = "..."
+        Me.btnBuscar.UseVisualStyleBackColor = False
+        '
+        'txtID
+        '
+        Me.txtID.Location = New System.Drawing.Point(205, 37)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(43, 20)
+        Me.txtID.TabIndex = 94
         '
         'frmOrdenesReparacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.btnModificar)
-        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnBuscar)
-        Me.Controls.Add(Me.btnCargar)
-        Me.Controls.Add(Me.grdGrilla)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.grdOrdenReparacion)
         Me.Controls.Add(Me.chkActivo)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -302,35 +348,30 @@ Partial Class frmOrdenesReparacion
         Me.Controls.Add(Me.txtFechaentrada)
         Me.Controls.Add(Me.txtFechaturno)
         Me.Controls.Add(Me.cboVehiculo)
-        Me.Controls.Add(Me.cboOrdenes)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboServicios)
         Me.Controls.Add(Me.cboCliente)
         Me.Controls.Add(Me.txtMotivo)
-        Me.Controls.Add(Me.txtSeñas)
+        Me.Controls.Add(Me.txtSeñasParticulares)
         Me.Controls.Add(Me.txtFechaestimada)
         Me.Controls.Add(Me.txtFechasalida)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.lbl1)
         Me.DoubleBuffered = True
+        Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmOrdenesReparacion"
-        Me.Text = "frmOrdenReparacio"
-        CType(Me.grdGrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Orden de reparacion"
+        CType(Me.grdOrdenReparacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnModificar As Button
-    Friend WithEvents btnEliminar As Button
-    Friend WithEvents btnBuscar As Button
-    Friend WithEvents btnCargar As Button
-    Friend WithEvents grdGrilla As DataGridView
-    Friend WithEvents Label6 As Label
+    Friend WithEvents grdOrdenReparacion As DataGridView
     Friend WithEvents chkActivo As CheckBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
@@ -339,17 +380,21 @@ Partial Class frmOrdenesReparacion
     Friend WithEvents txtFechaentrada As TextBox
     Friend WithEvents txtFechaturno As TextBox
     Friend WithEvents cboVehiculo As ComboBox
-    Friend WithEvents cboOrdenes As ComboBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cboServicios As ComboBox
     Friend WithEvents cboCliente As ComboBox
     Friend WithEvents txtMotivo As TextBox
-    Friend WithEvents txtSeñas As TextBox
+    Friend WithEvents txtSeñasParticulares As TextBox
     Friend WithEvents txtFechaestimada As TextBox
     Friend WithEvents txtFechasalida As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents lbl1 As Label
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents txtID As TextBox
 End Class
