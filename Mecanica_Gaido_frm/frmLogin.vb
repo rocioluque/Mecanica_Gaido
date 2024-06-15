@@ -49,15 +49,14 @@ Public Class frmLogin
     End Sub
 #End Region
 
-
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
         o_Login = New AD_Login
 
         Dim ValidLogin = o_Login.ValidarUsuario(txtUsuario.Text, txtContraseña.Text)
 
-        If validLogin = True Then
-            MenuPrincipal.Show()
-            AddHandler MenuPrincipal.FormClosed, AddressOf Me.Cerrar_Sesion
+        If ValidLogin = True Then
+            frmMenuPrincipal.Show()
+            AddHandler frmMenuPrincipal.FormClosed, AddressOf Me.Cerrar_Sesion
             Me.Hide()
         Else
             If txtContraseña.Text = "CONTRASEÑA" And txtUsuario.Text = "USUARIO" Then
