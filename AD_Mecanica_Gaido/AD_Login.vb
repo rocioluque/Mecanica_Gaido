@@ -26,10 +26,10 @@ Public Class AD_Login
 
                         Dim correoSoporte As New SoporteSistemaCorreo
                         correoSoporte.enviarCorreo(asunto:="SISTEMA: Solicitud de recuperación de contraseña",
-                                                    body:="Hola" & NombreUsuario & vbNewLine & "solicitaste recuperar tu contraseña." & vbNewLine &
-                                                    "tu actual contraseña es: " & contraseñaUsuario,
+                                                    body:="Hola " & NombreUsuario & vbNewLine & "Solicitaste recuperar tu contraseña." & vbNewLine &
+                                                    "Tu actual contraseña es: " & contraseñaUsuario,
                                                     receptorCorreo:=New List(Of String) From {correoUsuario})
-                        Return "Hola " & NombreUsuario & vbNewLine & "solicitaste recuperar tu contraseña." & vbNewLine & "Por favor revisá tu correo." & vbNewLine & correoUsuario
+                        Return "Hola " & NombreUsuario & vbNewLine & "Solicitaste recuperar tu contraseña." & vbNewLine & "Por favor revisa tu correo." & vbNewLine & correoUsuario
                     Else
                         Return "Lo siento, no tienes una cuenta con este nombre de usuario o correo electrónico."
                     End If
@@ -37,7 +37,6 @@ Public Class AD_Login
             End Using
         End Using
     End Function
-
     Public Function ValidarUsuario(ByVal usuario As String, ByVal contraseña As String) As Boolean
         Using connection = GetConnection()
             connection.Open()
