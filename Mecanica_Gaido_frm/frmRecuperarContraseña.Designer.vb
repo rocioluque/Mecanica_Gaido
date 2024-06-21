@@ -70,11 +70,12 @@ Partial Class frmRecuperarContraseña
         Me.lblResultado.AutoSize = True
         Me.lblResultado.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblResultado.ForeColor = System.Drawing.Color.White
-        Me.lblResultado.Location = New System.Drawing.Point(24, 139)
+        Me.lblResultado.Location = New System.Drawing.Point(24, 117)
         Me.lblResultado.Name = "lblResultado"
         Me.lblResultado.Size = New System.Drawing.Size(81, 20)
         Me.lblResultado.TabIndex = 3
         Me.lblResultado.Text = "Resultado"
+        Me.lblResultado.Visible = False
         '
         'PictureBox1
         '
