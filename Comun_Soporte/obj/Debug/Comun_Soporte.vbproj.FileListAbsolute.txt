@@ -18,3 +18,7 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\obj\Debug\Comun_
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\obj\Debug\Comun_Soporte.dll
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\obj\Debug\Comun_Soporte.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\obj\Debug\Comun_Soporte.pdb
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\bin\Debug\StarkbankEcdsa.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\bin\Debug\Newtonsoft.Json.xml
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Comun_Soporte\obj\Debug\Comun_Soporte.vbproj.CopyComplete

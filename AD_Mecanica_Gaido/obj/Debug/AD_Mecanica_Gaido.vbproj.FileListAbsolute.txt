@@ -31,3 +31,6 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\obj\Debug\AD
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\obj\Debug\AD_Mecanica_Gaido.dll
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\obj\Debug\AD_Mecanica_Gaido.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\obj\Debug\AD_Mecanica_Gaido.pdb
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\bin\Debug\StarkbankEcdsa.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\AD_Mecanica_Gaido\bin\Debug\Newtonsoft.Json.xml
