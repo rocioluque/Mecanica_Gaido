@@ -11,11 +11,12 @@ Public MustInherit Class ServidorCorreo
     Protected ssl As String
 
     Protected Sub inicializacionSmtpClient()
-        smtpClient = New SmtpClient
-        smtpClient.Credentials = New NetworkCredential(remitenteCorreo, contraseña)
-        smtpClient.Host = host
-        smtpClient.Port = port
-        smtpClient.EnableSsl = ssl
+        smtpClient = New SmtpClient With {
+            .Credentials = New NetworkCredential(remitenteCorreo, contraseña),
+            .Host = host,
+            .Port = port,
+            .EnableSsl = ssl
+        }
     End Sub
 
     Public Sub enviarCorreo(asunto As String, body As String, receptorCorreo As List(Of String))
@@ -32,6 +33,7 @@ Public MustInherit Class ServidorCorreo
 
             smtpClient.Send(mensajeCorreo)
         Catch ex As Exception
+            MsgBox("Error al enviar el correo: " & ex.Message, vbCritical, "Error")
         Finally
             mensajeCorreo.Dispose()
             smtpClient.Dispose()
