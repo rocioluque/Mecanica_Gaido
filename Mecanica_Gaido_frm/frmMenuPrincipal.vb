@@ -1,16 +1,43 @@
 ﻿Imports System.Data
 Imports System.Runtime.InteropServices
-Imports Dominio
 Imports Comun_Soporte
+Imports Mecanica_Gaido_frm.User32
 
 Public Class frmMenuPrincipal
-    Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
-        lblUsuario.Text = UsuarioActivo.usuario
-        lblRol.Text = UsuarioActivo.nombre_rol
-        lblNombre.Text = UsuarioActivo.nombrePersona & " " & UsuarioActivo.apellidoPersona
-        lblCorreo.Text = UsuarioActivo.correoPersona
+
+#Region "Movimiento frm"
+    ' Evento MouseDown hace que al mantener apretado el formulario se mueva y no esté estático
+    Private Sub frmMenuPrincipal_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        If e.Button = MouseButtons.Left Then
+            ' Llamar a ReleaseCapture para liberar la captura del mouse
+            ReleaseCapture()
+            ' Enviar el mensaje WM_NCLBUTTONDOWN para iniciar el arrastre
+            SendMessage(Me.Handle, &HA1, 2, 0)
+        End If
+    End Sub
+    Private Sub panelContenedor_MouseDown(sender As Object, e As MouseEventArgs) Handles panelContenedor.MouseDown
+        If e.Button = MouseButtons.Left Then
+            ReleaseCapture()
+            SendMessage(Me.Handle, &HA1, 2, 0)
+        End If
     End Sub
 
+    Private Sub PanelMenu_MouseDown(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseDown
+        If e.Button = MouseButtons.Left Then
+            ReleaseCapture()
+            SendMessage(Me.Handle, &HA1, 2, 0)
+        End If
+    End Sub
+
+    Private Sub PanelNav_MouseDown(sender As Object, e As MouseEventArgs) Handles panelNav.MouseDown
+        If e.Button = MouseButtons.Left Then
+            ReleaseCapture()
+            SendMessage(Me.Handle, &HA1, 2, 0)
+        End If
+    End Sub
+#End Region
+
+#Region "Control btn"
     Private Sub btnVehiculos_Click(sender As Object, e As EventArgs) Handles btnVehiculos.Click
         AbrirFormHijo(New frmVehiculos())
         DirectCast(sender, Button).BackColor = Color.SeaGreen
@@ -64,55 +91,16 @@ Public Class frmMenuPrincipal
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub MenuPrincipal_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
-        If e.Button = MouseButtons.Left Then
-            ReleaseCapture()
-            SendMessage(Me.Handle, &HA1, 2, 0)
-        End If
-    End Sub
-
-    Private Sub AbrirFormHijo(formHijo As Object)
-        If Me.panelContenedor.Controls.Count > 0 Then
-            Me.panelContenedor.Controls.RemoveAt(0)
-        End If
-
-        Dim fh As Form = TryCast(formHijo, Form)
-        If fh IsNot Nothing Then
-            fh.TopLevel = False
-            fh.Dock = DockStyle.Fill
-            Me.panelContenedor.Controls.Add(fh)
-            Me.panelContenedor.Tag = fh
-            fh.Show()
-            fh.BringToFront()
-        End If
-    End Sub
-
     Private Sub btnCerrarSesion_Click(sender As Object, e As EventArgs) Handles btnCerrarSesion.Click
         If MessageBox.Show("¿Estás seguro de cerrar sesión?", "Warning",
             MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
         End If
     End Sub
+#End Region
 
-    Private Sub MenuPrincipal_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
-        ' Verificar si el formulario secundario está actualmente abierto en el panelContenedor
-        If panelContenedor.Controls.Count > 0 AndAlso TypeOf panelContenedor.Controls(0) Is Form Then
-            Dim formularioSecundario As Form = DirectCast(panelContenedor.Controls(0), Form)
+#Region "Mantener el color btn"
 
-            ' Verificar si el formulario principal se está maximizando
-            If WindowState = FormWindowState.Maximized Then
-                ' Ajustar el tamaño y la posición del formulario secundario dentro del panelContenedor
-                formularioSecundario.Dock = DockStyle.Fill
-            Else
-                ' Restaurar el tamaño y la posición del formulario secundario dentro del panelContenedor
-                formularioSecundario.Dock = DockStyle.None
-                formularioSecundario.Size = New Size(panelContenedor.Width, panelContenedor.Height)
-                formularioSecundario.Location = New Point(0, 0)
-            End If
-        End If
-    End Sub
-
-#Region "Control botones"
     Private Sub btnCompras_Leave(sender As Object, e As EventArgs) Handles btnCompras.Leave
         DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
     End Sub
@@ -135,7 +123,45 @@ Public Class frmMenuPrincipal
         DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
     End Sub
 
-
 #End Region
+
+#Region "frm Padre y resize"
+    Private Sub AbrirFormHijo(formHijo As Object)
+        If Me.panelContenedor.Controls.Count > 0 Then
+            Me.panelContenedor.Controls.RemoveAt(0)
+        End If
+
+        Dim fh As Form = TryCast(formHijo, Form)
+        If fh IsNot Nothing Then
+            fh.TopLevel = False
+            fh.Dock = DockStyle.Fill
+            Me.panelContenedor.Controls.Add(fh)
+            Me.panelContenedor.Tag = fh
+            fh.Show()
+            fh.BringToFront()
+        End If
+    End Sub
+
+    Private Sub MenuPrincipal_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        ' Obtener el tamaño del panel izquierdo que queremos dejar visible
+        Dim panelMenuWidth As Integer = PanelMenu.Width
+
+        ' Calcular el nuevo tamaño y posición del panel contenedor a la derecha
+        Dim panelContenedorWidth As Integer = Me.Width - panelMenuWidth
+        Dim panelContenedorHeight As Integer = Me.Height
+        Dim panelContenedorLocation As New Point(panelMenuWidth, 0)
+
+        ' Establecer el nuevo tamaño y posición del panel contenedor
+        panelContenedor.Size = New Size(panelContenedorWidth, panelContenedorHeight)
+        panelContenedor.Location = panelContenedorLocation
+    End Sub
+#End Region
+
+    Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
+        lblUsuario.Text = UsuarioActivo.usuario
+        lblRol.Text = UsuarioActivo.nombre_rol
+        lblNombre.Text = UsuarioActivo.nombrePersona & " " & UsuarioActivo.apellidoPersona
+        lblCorreo.Text = UsuarioActivo.correoPersona
+    End Sub
 
 End Class

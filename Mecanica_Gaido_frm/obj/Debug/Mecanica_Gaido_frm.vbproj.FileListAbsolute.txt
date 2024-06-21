@@ -52,8 +52,11 @@ C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\M
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.exe
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.xml
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.pdb
-C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmCuentas.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmRecuperarContraseña.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmMenuPrincipal.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmAgregarCiudad.resources
 C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.frmEmpleados.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\obj\Debug\Mecanica_Gaido_frm.txtCargo.resources
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\StarkbankEcdsa.dll
+C:\Users\alumn\Documents\Instituto\Mecanica_Gaido\Mecanica_Gaido_frm\bin\Debug\Newtonsoft.Json.xml
