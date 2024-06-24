@@ -5,11 +5,7 @@ Imports System.Configuration
 Public Class frmPersonas
     Dim o_Personas As New AD_Personas
 
-    Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Cargar_Grilla()
-        Cargar_Provincias()
-    End Sub
-
+#Region "Cargar Prov y ciudades"
     Private Sub Cargar_Provincias()
         Try
             Dim tabla As DataTable = o_Personas.Cargar_Provincias()
@@ -58,6 +54,13 @@ Public Class frmPersonas
         Catch ex As Exception
             MsgBox("Error al cargar ciudades: " & ex.Message, vbCritical, "Error")
         End Try
+    End Sub
+#End Region
+
+#Region "Procedimientos"
+    Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cargar_Grilla()
+        Cargar_Provincias()
     End Sub
 
     Public Sub Cargar_Grilla()
@@ -119,19 +122,42 @@ Public Class frmPersonas
             End If
         End If
     End Sub
+
     Private Sub grdPersonas_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles grdPersonas.CellClick
         If e.RowIndex >= 0 Then
             CargarDatosEnTextBoxes(e.RowIndex)
         End If
     End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        txtID.Clear()
+        txtNombre.Clear()
+        txtApellido.Clear()
+        txtTelefono.Clear()
+        txtCorreo.Clear()
+        txtDireccion.Clear()
+        txtNota.Clear()
+        chkEstado.Checked = False
+        cboCiudad.SelectedIndex = 0
+        cboProvincia.SelectedIndex = 0
+    End Sub
+#End Region
+
+#Region "Abrir frm para agregar datos"
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
-        frmEmpleados.ShowDialog()
+        frmAgregarEmpleados.ShowDialog()
     End Sub
 
     Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCuentas.Click
-        txtCargo.ShowDialog()
+        frmAgregarCuentas.ShowDialog()
     End Sub
 
+    Private Sub btnAgregarCiudad_Click(sender As Object, e As EventArgs) Handles btnAgregarCiudad.Click
+        frmAgregarCiudad.ShowDialog()
+    End Sub
+#End Region
+
+#Region "Cargar"
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         If txtNombre.Text <> Nothing And txtApellido.Text <> Nothing And txtTelefono.Text <> Nothing And txtCorreo.Text <> Nothing And
             txtDireccion.Text <> Nothing And cboCiudad.SelectedValue Then
@@ -157,7 +183,9 @@ Public Class frmPersonas
             MsgBox("Complete Datos", vbInformation, "Error")
         End If
     End Sub
+#End Region
 
+#Region "Modificar"
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If txtID.Text <> Nothing And txtNombre.Text <> Nothing And txtApellido.Text <> Nothing And txtTelefono.Text <> Nothing And txtCorreo.Text <> Nothing And
             txtDireccion.Text <> Nothing And cboCiudad.SelectedValue Then
@@ -184,28 +212,6 @@ Public Class frmPersonas
             MsgBox("Complete Datos", vbInformation, "Error")
         End If
     End Sub
+#End Region
 
-    Private Sub btnAgregarCiudad_Click(sender As Object, e As EventArgs) Handles btnAgregarCiudad.Click
-        frmAgregarCiudad.ShowDialog()
-    End Sub
-
-    Private Sub txtDireccion_TextChanged(sender As Object, e As EventArgs) Handles txtDireccion.TextChanged
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub cboCiudad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCiudad.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
-    End Sub
 End Class
