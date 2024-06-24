@@ -23,4 +23,12 @@
         cboFormaEntrega.SelectedIndex = 0
         chkEstado.Checked = False
     End Sub
+
+    Private Sub btnFormaEntrega_Click(sender As Object, e As EventArgs) Handles btnFormaEntrega.Click
+        frmAgregarFormaEntrega.ShowDialog()
+    End Sub
+
+    Private Sub btnTipoVenta_Click(sender As Object, e As EventArgs) Handles btnTipoVenta.Click
+        frmAgregarTipoVenta.ShowDialog()
+    End Sub
 End Class
