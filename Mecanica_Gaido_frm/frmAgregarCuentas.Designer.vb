@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class txtCargo
+Partial Class frmAgregarCuentas
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class txtCargo
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(txtCargo))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarCuentas))
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.txtEmpresa = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class txtCargo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSaldo = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtCargo = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -202,14 +202,14 @@ Partial Class txtCargo
         Me.txtSaldo.Size = New System.Drawing.Size(133, 23)
         Me.txtSaldo.TabIndex = 78
         '
-        'TextBox2
+        'txtCargo
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(415, 69)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 23)
-        Me.TextBox2.TabIndex = 77
+        Me.txtCargo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCargo.Location = New System.Drawing.Point(415, 69)
+        Me.txtCargo.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCargo.Name = "txtCargo"
+        Me.txtCargo.Size = New System.Drawing.Size(133, 23)
+        Me.txtCargo.TabIndex = 77
         '
         'Label5
         '
@@ -298,7 +298,7 @@ Partial Class txtCargo
         Me.grdCuenta.Size = New System.Drawing.Size(652, 176)
         Me.grdCuenta.TabIndex = 82
         '
-        'txtCargo
+        'frmAgregarCuentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -309,7 +309,7 @@ Partial Class txtCargo
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.txtSaldo)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtCargo)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtEmpresa)
@@ -327,7 +327,7 @@ Partial Class txtCargo
         Me.Controls.Add(Me.btnCerrar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "txtCargo"
+        Me.Name = "frmAgregarCuentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cuentas Corrientes"
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -351,7 +351,7 @@ Partial Class txtCargo
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtSaldo As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtCargo As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents btnModificar As Button
