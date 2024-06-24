@@ -47,10 +47,10 @@ Partial Class frmVehiculos
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnAgregarTipo = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarTipoVehiculo = New System.Windows.Forms.PictureBox()
         Me.btnAgregarMarca = New System.Windows.Forms.PictureBox()
         CType(Me.grbVehiculo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarTipo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarTipoVehiculo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -275,7 +275,7 @@ Partial Class frmVehiculos
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.ForeColor = System.Drawing.Color.White
-        Me.btnModificar.Location = New System.Drawing.Point(754, 106)
+        Me.btnModificar.Location = New System.Drawing.Point(743, 123)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(117, 37)
         Me.btnModificar.TabIndex = 84
@@ -293,7 +293,7 @@ Partial Class frmVehiculos
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(754, 153)
+        Me.btnCancelar.Location = New System.Drawing.Point(740, 186)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
         Me.btnCancelar.TabIndex = 83
@@ -310,7 +310,7 @@ Partial Class frmVehiculos
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Location = New System.Drawing.Point(754, 59)
+        Me.btnAceptar.Location = New System.Drawing.Point(743, 60)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
         Me.btnAceptar.TabIndex = 82
@@ -334,15 +334,15 @@ Partial Class frmVehiculos
         Me.btnBuscar.Text = "..."
         Me.btnBuscar.UseVisualStyleBackColor = False
         '
-        'btnAgregarTipo
+        'btnAgregarTipoVehiculo
         '
-        Me.btnAgregarTipo.BackgroundImage = CType(resources.GetObject("btnAgregarTipo.BackgroundImage"), System.Drawing.Image)
-        Me.btnAgregarTipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAgregarTipo.Location = New System.Drawing.Point(348, 89)
-        Me.btnAgregarTipo.Name = "btnAgregarTipo"
-        Me.btnAgregarTipo.Size = New System.Drawing.Size(26, 21)
-        Me.btnAgregarTipo.TabIndex = 86
-        Me.btnAgregarTipo.TabStop = False
+        Me.btnAgregarTipoVehiculo.BackgroundImage = CType(resources.GetObject("btnAgregarTipoVehiculo.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarTipoVehiculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarTipoVehiculo.Location = New System.Drawing.Point(348, 89)
+        Me.btnAgregarTipoVehiculo.Name = "btnAgregarTipoVehiculo"
+        Me.btnAgregarTipoVehiculo.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarTipoVehiculo.TabIndex = 86
+        Me.btnAgregarTipoVehiculo.TabStop = False
         '
         'btnAgregarMarca
         '
@@ -362,7 +362,7 @@ Partial Class frmVehiculos
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(939, 581)
         Me.Controls.Add(Me.btnAgregarMarca)
-        Me.Controls.Add(Me.btnAgregarTipo)
+        Me.Controls.Add(Me.btnAgregarTipoVehiculo)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnCancelar)
@@ -394,7 +394,7 @@ Partial Class frmVehiculos
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Vehiculos"
         CType(Me.grbVehiculo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarTipo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarTipoVehiculo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -425,6 +425,6 @@ Partial Class frmVehiculos
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnAceptar As Button
     Friend WithEvents btnBuscar As Button
-    Friend WithEvents btnAgregarTipo As PictureBox
+    Friend WithEvents btnAgregarTipoVehiculo As PictureBox
     Friend WithEvents btnAgregarMarca As PictureBox
 End Class
