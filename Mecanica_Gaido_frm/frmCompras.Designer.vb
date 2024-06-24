@@ -26,15 +26,15 @@ Partial Class frmCompras
         Me.grdCompras = New System.Windows.Forms.DataGridView()
         Me.chkEstado = New System.Windows.Forms.CheckBox()
         Me.txtTotal = New System.Windows.Forms.TextBox()
-        Me.txtOtrosimp = New System.Windows.Forms.TextBox()
-        Me.txtIvamonto = New System.Windows.Forms.TextBox()
-        Me.txtIva = New System.Windows.Forms.TextBox()
-        Me.txtSubtotal = New System.Windows.Forms.TextBox()
-        Me.txtNumcomp = New System.Windows.Forms.TextBox()
-        Me.txtFechacompra = New System.Windows.Forms.TextBox()
+        Me.txtOtrosImpuestos = New System.Windows.Forms.TextBox()
+        Me.txtIvaMonto = New System.Windows.Forms.TextBox()
+        Me.txtIVA = New System.Windows.Forms.TextBox()
+        Me.txtSubTotal = New System.Windows.Forms.TextBox()
+        Me.txtNumComprobante = New System.Windows.Forms.TextBox()
+        Me.txtFechaCompra = New System.Windows.Forms.TextBox()
         Me.txtID = New System.Windows.Forms.TextBox()
-        Me.cmbFormapago = New System.Windows.Forms.ComboBox()
-        Me.cmbProveedor = New System.Windows.Forms.ComboBox()
+        Me.cboFormaPago = New System.Windows.Forms.ComboBox()
+        Me.cboCuenta = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -45,15 +45,15 @@ Partial Class frmCompras
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAgregarUsuario = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarCuenta = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarFormaPago = New System.Windows.Forms.PictureBox()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         CType(Me.grdCompras, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarFormaPago, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grdCompras
@@ -91,53 +91,53 @@ Partial Class frmCompras
         Me.txtTotal.Size = New System.Drawing.Size(123, 20)
         Me.txtTotal.TabIndex = 43
         '
-        'txtOtrosimp
+        'txtOtrosImpuestos
         '
-        Me.txtOtrosimp.Location = New System.Drawing.Point(524, 179)
-        Me.txtOtrosimp.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtOtrosimp.Name = "txtOtrosimp"
-        Me.txtOtrosimp.Size = New System.Drawing.Size(123, 20)
-        Me.txtOtrosimp.TabIndex = 42
+        Me.txtOtrosImpuestos.Location = New System.Drawing.Point(524, 179)
+        Me.txtOtrosImpuestos.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtOtrosImpuestos.Name = "txtOtrosImpuestos"
+        Me.txtOtrosImpuestos.Size = New System.Drawing.Size(123, 20)
+        Me.txtOtrosImpuestos.TabIndex = 42
         '
-        'txtIvamonto
+        'txtIvaMonto
         '
-        Me.txtIvamonto.Location = New System.Drawing.Point(524, 134)
-        Me.txtIvamonto.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtIvamonto.Name = "txtIvamonto"
-        Me.txtIvamonto.Size = New System.Drawing.Size(123, 20)
-        Me.txtIvamonto.TabIndex = 41
+        Me.txtIvaMonto.Location = New System.Drawing.Point(524, 134)
+        Me.txtIvaMonto.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIvaMonto.Name = "txtIvaMonto"
+        Me.txtIvaMonto.Size = New System.Drawing.Size(123, 20)
+        Me.txtIvaMonto.TabIndex = 41
         '
-        'txtIva
+        'txtIVA
         '
-        Me.txtIva.Location = New System.Drawing.Point(524, 89)
-        Me.txtIva.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtIva.Name = "txtIva"
-        Me.txtIva.Size = New System.Drawing.Size(123, 20)
-        Me.txtIva.TabIndex = 40
+        Me.txtIVA.Location = New System.Drawing.Point(524, 89)
+        Me.txtIVA.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIVA.Name = "txtIVA"
+        Me.txtIVA.Size = New System.Drawing.Size(123, 20)
+        Me.txtIVA.TabIndex = 40
         '
-        'txtSubtotal
+        'txtSubTotal
         '
-        Me.txtSubtotal.Location = New System.Drawing.Point(524, 44)
-        Me.txtSubtotal.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSubtotal.Name = "txtSubtotal"
-        Me.txtSubtotal.Size = New System.Drawing.Size(123, 20)
-        Me.txtSubtotal.TabIndex = 39
+        Me.txtSubTotal.Location = New System.Drawing.Point(524, 44)
+        Me.txtSubTotal.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSubTotal.Name = "txtSubTotal"
+        Me.txtSubTotal.Size = New System.Drawing.Size(123, 20)
+        Me.txtSubTotal.TabIndex = 39
         '
-        'txtNumcomp
+        'txtNumComprobante
         '
-        Me.txtNumcomp.Location = New System.Drawing.Point(165, 134)
-        Me.txtNumcomp.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtNumcomp.Name = "txtNumcomp"
-        Me.txtNumcomp.Size = New System.Drawing.Size(123, 20)
-        Me.txtNumcomp.TabIndex = 38
+        Me.txtNumComprobante.Location = New System.Drawing.Point(165, 134)
+        Me.txtNumComprobante.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNumComprobante.Name = "txtNumComprobante"
+        Me.txtNumComprobante.Size = New System.Drawing.Size(123, 20)
+        Me.txtNumComprobante.TabIndex = 38
         '
-        'txtFechacompra
+        'txtFechaCompra
         '
-        Me.txtFechacompra.Location = New System.Drawing.Point(165, 89)
-        Me.txtFechacompra.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtFechacompra.Name = "txtFechacompra"
-        Me.txtFechacompra.Size = New System.Drawing.Size(123, 20)
-        Me.txtFechacompra.TabIndex = 37
+        Me.txtFechaCompra.Location = New System.Drawing.Point(165, 89)
+        Me.txtFechaCompra.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFechaCompra.Name = "txtFechaCompra"
+        Me.txtFechaCompra.Size = New System.Drawing.Size(123, 20)
+        Me.txtFechaCompra.TabIndex = 37
         '
         'txtID
         '
@@ -147,24 +147,24 @@ Partial Class frmCompras
         Me.txtID.Size = New System.Drawing.Size(46, 20)
         Me.txtID.TabIndex = 36
         '
-        'cmbFormapago
+        'cboFormaPago
         '
-        Me.cmbFormapago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbFormapago.FormattingEnabled = True
-        Me.cmbFormapago.Location = New System.Drawing.Point(165, 223)
-        Me.cmbFormapago.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmbFormapago.Name = "cmbFormapago"
-        Me.cmbFormapago.Size = New System.Drawing.Size(123, 21)
-        Me.cmbFormapago.TabIndex = 35
+        Me.cboFormaPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboFormaPago.FormattingEnabled = True
+        Me.cboFormaPago.Location = New System.Drawing.Point(165, 223)
+        Me.cboFormaPago.Margin = New System.Windows.Forms.Padding(2)
+        Me.cboFormaPago.Name = "cboFormaPago"
+        Me.cboFormaPago.Size = New System.Drawing.Size(123, 21)
+        Me.cboFormaPago.TabIndex = 35
         '
-        'cmbProveedor
+        'cboCuenta
         '
-        Me.cmbProveedor.FormattingEnabled = True
-        Me.cmbProveedor.Location = New System.Drawing.Point(165, 179)
-        Me.cmbProveedor.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmbProveedor.Name = "cmbProveedor"
-        Me.cmbProveedor.Size = New System.Drawing.Size(123, 21)
-        Me.cmbProveedor.TabIndex = 34
+        Me.cboCuenta.FormattingEnabled = True
+        Me.cboCuenta.Location = New System.Drawing.Point(165, 179)
+        Me.cboCuenta.Margin = New System.Windows.Forms.Padding(2)
+        Me.cboCuenta.Name = "cboCuenta"
+        Me.cboCuenta.Size = New System.Drawing.Size(123, 21)
+        Me.cboCuenta.TabIndex = 34
         '
         'Label11
         '
@@ -246,9 +246,9 @@ Partial Class frmCompras
         Me.Label4.Location = New System.Drawing.Point(43, 180)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 17)
+        Me.Label4.Size = New System.Drawing.Size(57, 17)
         Me.Label4.TabIndex = 27
-        Me.Label4.Text = "Proveedor"
+        Me.Label4.Text = "Cuenta"
         '
         'Label3
         '
@@ -286,25 +286,25 @@ Partial Class frmCompras
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "ID"
         '
-        'btnAgregarUsuario
+        'btnAgregarCuenta
         '
-        Me.btnAgregarUsuario.BackgroundImage = CType(resources.GetObject("btnAgregarUsuario.BackgroundImage"), System.Drawing.Image)
-        Me.btnAgregarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAgregarUsuario.Location = New System.Drawing.Point(295, 179)
-        Me.btnAgregarUsuario.Name = "btnAgregarUsuario"
-        Me.btnAgregarUsuario.Size = New System.Drawing.Size(26, 21)
-        Me.btnAgregarUsuario.TabIndex = 87
-        Me.btnAgregarUsuario.TabStop = False
+        Me.btnAgregarCuenta.BackgroundImage = CType(resources.GetObject("btnAgregarCuenta.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarCuenta.Location = New System.Drawing.Point(295, 179)
+        Me.btnAgregarCuenta.Name = "btnAgregarCuenta"
+        Me.btnAgregarCuenta.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarCuenta.TabIndex = 87
+        Me.btnAgregarCuenta.TabStop = False
         '
-        'PictureBox1
+        'btnAgregarFormaPago
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(295, 223)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(26, 21)
-        Me.PictureBox1.TabIndex = 88
-        Me.PictureBox1.TabStop = False
+        Me.btnAgregarFormaPago.BackgroundImage = CType(resources.GetObject("btnAgregarFormaPago.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarFormaPago.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarFormaPago.Location = New System.Drawing.Point(295, 223)
+        Me.btnAgregarFormaPago.Name = "btnAgregarFormaPago"
+        Me.btnAgregarFormaPago.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarFormaPago.TabIndex = 88
+        Me.btnAgregarFormaPago.TabStop = False
         '
         'btnModificar
         '
@@ -386,20 +386,20 @@ Partial Class frmCompras
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnBuscar)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btnAgregarUsuario)
+        Me.Controls.Add(Me.btnAgregarFormaPago)
+        Me.Controls.Add(Me.btnAgregarCuenta)
         Me.Controls.Add(Me.grdCompras)
         Me.Controls.Add(Me.chkEstado)
         Me.Controls.Add(Me.txtTotal)
-        Me.Controls.Add(Me.txtOtrosimp)
-        Me.Controls.Add(Me.txtIvamonto)
-        Me.Controls.Add(Me.txtIva)
-        Me.Controls.Add(Me.txtSubtotal)
-        Me.Controls.Add(Me.txtNumcomp)
-        Me.Controls.Add(Me.txtFechacompra)
+        Me.Controls.Add(Me.txtOtrosImpuestos)
+        Me.Controls.Add(Me.txtIvaMonto)
+        Me.Controls.Add(Me.txtIVA)
+        Me.Controls.Add(Me.txtSubTotal)
+        Me.Controls.Add(Me.txtNumComprobante)
+        Me.Controls.Add(Me.txtFechaCompra)
         Me.Controls.Add(Me.txtID)
-        Me.Controls.Add(Me.cmbFormapago)
-        Me.Controls.Add(Me.cmbProveedor)
+        Me.Controls.Add(Me.cboFormaPago)
+        Me.Controls.Add(Me.cboCuenta)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -417,8 +417,8 @@ Partial Class frmCompras
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmCompras"
         CType(Me.grdCompras, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarUsuario, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarFormaPago, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -427,15 +427,15 @@ Partial Class frmCompras
     Friend WithEvents grdCompras As DataGridView
     Friend WithEvents chkEstado As CheckBox
     Friend WithEvents txtTotal As TextBox
-    Friend WithEvents txtOtrosimp As TextBox
-    Friend WithEvents txtIvamonto As TextBox
-    Friend WithEvents txtIva As TextBox
-    Friend WithEvents txtSubtotal As TextBox
-    Friend WithEvents txtNumcomp As TextBox
-    Friend WithEvents txtFechacompra As TextBox
+    Friend WithEvents txtOtrosImpuestos As TextBox
+    Friend WithEvents txtIvaMonto As TextBox
+    Friend WithEvents txtIVA As TextBox
+    Friend WithEvents txtSubTotal As TextBox
+    Friend WithEvents txtNumComprobante As TextBox
+    Friend WithEvents txtFechaCompra As TextBox
     Friend WithEvents txtID As TextBox
-    Friend WithEvents cmbFormapago As ComboBox
-    Friend WithEvents cmbProveedor As ComboBox
+    Friend WithEvents cboFormaPago As ComboBox
+    Friend WithEvents cboCuenta As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
@@ -446,8 +446,8 @@ Partial Class frmCompras
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnAgregarUsuario As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnAgregarCuenta As PictureBox
+    Friend WithEvents btnAgregarFormaPago As PictureBox
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnAceptar As Button

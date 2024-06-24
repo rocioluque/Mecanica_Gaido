@@ -36,7 +36,7 @@ Partial Class frmOrdenesReparacion
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboServicios = New System.Windows.Forms.ComboBox()
-        Me.cboCliente = New System.Windows.Forms.ComboBox()
+        Me.cboCuenta = New System.Windows.Forms.ComboBox()
         Me.txtMotivo = New System.Windows.Forms.TextBox()
         Me.txtSeñasParticulares = New System.Windows.Forms.TextBox()
         Me.txtFechaestimada = New System.Windows.Forms.TextBox()
@@ -49,7 +49,13 @@ Partial Class frmOrdenesReparacion
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtID = New System.Windows.Forms.TextBox()
+        Me.btnAgregarCuenta = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarServiciosTerceros = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarMarca = New System.Windows.Forms.PictureBox()
         CType(Me.grdOrdenReparacion, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarServiciosTerceros, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grdOrdenReparacion
@@ -182,13 +188,13 @@ Partial Class frmOrdenesReparacion
         Me.cboServicios.Size = New System.Drawing.Size(121, 21)
         Me.cboServicios.TabIndex = 75
         '
-        'cboCliente
+        'cboCuenta
         '
-        Me.cboCliente.FormattingEnabled = True
-        Me.cboCliente.Location = New System.Drawing.Point(569, 164)
-        Me.cboCliente.Name = "cboCliente"
-        Me.cboCliente.Size = New System.Drawing.Size(121, 21)
-        Me.cboCliente.TabIndex = 74
+        Me.cboCuenta.FormattingEnabled = True
+        Me.cboCuenta.Location = New System.Drawing.Point(569, 164)
+        Me.cboCuenta.Name = "cboCuenta"
+        Me.cboCuenta.Size = New System.Drawing.Size(121, 21)
+        Me.cboCuenta.TabIndex = 74
         '
         'txtMotivo
         '
@@ -279,7 +285,7 @@ Partial Class frmOrdenesReparacion
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(763, 165)
+        Me.btnCancelar.Location = New System.Drawing.Point(763, 181)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(117, 37)
         Me.btnCancelar.TabIndex = 92
@@ -296,7 +302,7 @@ Partial Class frmOrdenesReparacion
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Location = New System.Drawing.Point(763, 71)
+        Me.btnAceptar.Location = New System.Drawing.Point(763, 55)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(117, 37)
         Me.btnAceptar.TabIndex = 91
@@ -327,6 +333,36 @@ Partial Class frmOrdenesReparacion
         Me.txtID.Size = New System.Drawing.Size(43, 20)
         Me.txtID.TabIndex = 94
         '
+        'btnAgregarCuenta
+        '
+        Me.btnAgregarCuenta.BackgroundImage = CType(resources.GetObject("btnAgregarCuenta.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarCuenta.Location = New System.Drawing.Point(696, 164)
+        Me.btnAgregarCuenta.Name = "btnAgregarCuenta"
+        Me.btnAgregarCuenta.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarCuenta.TabIndex = 95
+        Me.btnAgregarCuenta.TabStop = False
+        '
+        'btnAgregarServiciosTerceros
+        '
+        Me.btnAgregarServiciosTerceros.BackgroundImage = CType(resources.GetObject("btnAgregarServiciosTerceros.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarServiciosTerceros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarServiciosTerceros.Location = New System.Drawing.Point(696, 206)
+        Me.btnAgregarServiciosTerceros.Name = "btnAgregarServiciosTerceros"
+        Me.btnAgregarServiciosTerceros.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarServiciosTerceros.TabIndex = 96
+        Me.btnAgregarServiciosTerceros.TabStop = False
+        '
+        'btnAgregarMarca
+        '
+        Me.btnAgregarMarca.BackgroundImage = CType(resources.GetObject("btnAgregarMarca.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarMarca.Location = New System.Drawing.Point(333, 81)
+        Me.btnAgregarMarca.Name = "btnAgregarMarca"
+        Me.btnAgregarMarca.Size = New System.Drawing.Size(26, 21)
+        Me.btnAgregarMarca.TabIndex = 97
+        Me.btnAgregarMarca.TabStop = False
+        '
         'frmOrdenesReparacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -334,6 +370,9 @@ Partial Class frmOrdenesReparacion
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
+        Me.Controls.Add(Me.btnAgregarMarca)
+        Me.Controls.Add(Me.btnAgregarServiciosTerceros)
+        Me.Controls.Add(Me.btnAgregarCuenta)
         Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnCancelar)
@@ -352,7 +391,7 @@ Partial Class frmOrdenesReparacion
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboServicios)
-        Me.Controls.Add(Me.cboCliente)
+        Me.Controls.Add(Me.cboCuenta)
         Me.Controls.Add(Me.txtMotivo)
         Me.Controls.Add(Me.txtSeñasParticulares)
         Me.Controls.Add(Me.txtFechaestimada)
@@ -367,6 +406,9 @@ Partial Class frmOrdenesReparacion
         Me.Name = "frmOrdenesReparacion"
         Me.Text = "Orden de reparacion"
         CType(Me.grdOrdenReparacion, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarServiciosTerceros, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -384,7 +426,7 @@ Partial Class frmOrdenesReparacion
     Friend WithEvents Label10 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cboServicios As ComboBox
-    Friend WithEvents cboCliente As ComboBox
+    Friend WithEvents cboCuenta As ComboBox
     Friend WithEvents txtMotivo As TextBox
     Friend WithEvents txtSeñasParticulares As TextBox
     Friend WithEvents txtFechaestimada As TextBox
@@ -397,4 +439,7 @@ Partial Class frmOrdenesReparacion
     Friend WithEvents btnAceptar As Button
     Friend WithEvents btnBuscar As Button
     Friend WithEvents txtID As TextBox
+    Friend WithEvents btnAgregarCuenta As PictureBox
+    Friend WithEvents btnAgregarServiciosTerceros As PictureBox
+    Friend WithEvents btnAgregarMarca As PictureBox
 End Class
