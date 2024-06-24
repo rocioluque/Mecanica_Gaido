@@ -56,10 +56,14 @@ Partial Class frmVentas
         Me.btnAgregarCuenta = New System.Windows.Forms.PictureBox()
         Me.btnAgregarEmpleado = New System.Windows.Forms.PictureBox()
         Me.btnAgregarFormaPago = New System.Windows.Forms.PictureBox()
+        Me.btnTipoVenta = New System.Windows.Forms.PictureBox()
+        Me.btnFormaEntrega = New System.Windows.Forms.PictureBox()
         CType(Me.grdVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarEmpleado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarFormaPago, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnTipoVenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnFormaEntrega, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grdVentas
@@ -405,6 +409,26 @@ Partial Class frmVentas
         Me.btnAgregarFormaPago.TabIndex = 109
         Me.btnAgregarFormaPago.TabStop = False
         '
+        'btnTipoVenta
+        '
+        Me.btnTipoVenta.BackgroundImage = CType(resources.GetObject("btnTipoVenta.BackgroundImage"), System.Drawing.Image)
+        Me.btnTipoVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnTipoVenta.Location = New System.Drawing.Point(716, 154)
+        Me.btnTipoVenta.Name = "btnTipoVenta"
+        Me.btnTipoVenta.Size = New System.Drawing.Size(26, 21)
+        Me.btnTipoVenta.TabIndex = 110
+        Me.btnTipoVenta.TabStop = False
+        '
+        'btnFormaEntrega
+        '
+        Me.btnFormaEntrega.BackgroundImage = CType(resources.GetObject("btnFormaEntrega.BackgroundImage"), System.Drawing.Image)
+        Me.btnFormaEntrega.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnFormaEntrega.Location = New System.Drawing.Point(716, 181)
+        Me.btnFormaEntrega.Name = "btnFormaEntrega"
+        Me.btnFormaEntrega.Size = New System.Drawing.Size(26, 21)
+        Me.btnFormaEntrega.TabIndex = 111
+        Me.btnFormaEntrega.TabStop = False
+        '
         'frmVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -412,6 +436,8 @@ Partial Class frmVentas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(939, 581)
+        Me.Controls.Add(Me.btnFormaEntrega)
+        Me.Controls.Add(Me.btnTipoVenta)
         Me.Controls.Add(Me.btnAgregarFormaPago)
         Me.Controls.Add(Me.btnAgregarEmpleado)
         Me.Controls.Add(Me.btnAgregarCuenta)
@@ -455,6 +481,8 @@ Partial Class frmVentas
         CType(Me.btnAgregarCuenta, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarEmpleado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarFormaPago, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnTipoVenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnFormaEntrega, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -492,4 +520,6 @@ Partial Class frmVentas
     Friend WithEvents btnAgregarCuenta As PictureBox
     Friend WithEvents btnAgregarEmpleado As PictureBox
     Friend WithEvents btnAgregarFormaPago As PictureBox
+    Friend WithEvents btnTipoVenta As PictureBox
+    Friend WithEvents btnFormaEntrega As PictureBox
 End Class
