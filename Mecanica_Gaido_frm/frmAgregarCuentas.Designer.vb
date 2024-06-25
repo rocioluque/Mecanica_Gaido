@@ -302,7 +302,7 @@ Partial Class frmAgregarCuentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(738, 407)
         Me.Controls.Add(Me.grdCuenta)
         Me.Controls.Add(Me.btnModificar)
@@ -328,7 +328,7 @@ Partial Class frmAgregarCuentas
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarCuentas"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Cuentas Corrientes"
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grdCuenta, System.ComponentModel.ISupportInitialize).EndInit()

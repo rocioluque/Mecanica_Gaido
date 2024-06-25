@@ -63,6 +63,7 @@ Partial Class frmAgregarCiudad
         '
         'btnAgregar
         '
+        Me.btnAgregar.BackColor = System.Drawing.Color.Transparent
         Me.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
         Me.btnAgregar.FlatAppearance.BorderSize = 2
         Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
@@ -74,7 +75,7 @@ Partial Class frmAgregarCiudad
         Me.btnAgregar.Size = New System.Drawing.Size(82, 29)
         Me.btnAgregar.TabIndex = 5
         Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = True
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -99,7 +100,7 @@ Partial Class frmAgregarCiudad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(393, 208)
         Me.Controls.Add(Me.cboProvincia)
         Me.Controls.Add(Me.Label2)
@@ -111,6 +112,7 @@ Partial Class frmAgregarCiudad
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarCiudad"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Ciudad"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
