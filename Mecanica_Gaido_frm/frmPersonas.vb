@@ -5,7 +5,16 @@ Imports System.Configuration
 Public Class frmPersonas
     Dim o_Personas As New AD_Personas
 
+<<<<<<< HEAD
+    Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cargar_Grilla()
+        Cargar_Provincias()
+        limpiar()
+    End Sub
+
+=======
 #Region "Cargar Prov y ciudades"
+>>>>>>> 0062e405a165c8e13c2e55343e7a3003ee301f69
     Private Sub Cargar_Provincias()
         Try
             Dim tabla As DataTable = o_Personas.Cargar_Provincias()
@@ -174,13 +183,16 @@ Public Class frmPersonas
 
                 o_Personas.Agregar_Persona(nombre, apellido, telefono, correo, direccion, idCiudad, nota, estado)
                 MsgBox("Persona agregada correctamente.", vbInformation, "Información")
+                limpiar()
 
                 Cargar_Grilla()
             Catch ex As Exception
                 MsgBox("Error al agregar la persona: " & ex.Message, vbCritical, "Error")
+                limpiar()
             End Try
         Else
             MsgBox("Complete Datos", vbInformation, "Error")
+            limpiar()
         End If
     End Sub
 #End Region
@@ -202,16 +214,63 @@ Public Class frmPersonas
 
                 o_Personas.Modificar_Persona(idPersona, nombre, apellido, telefono, correo, direccion, idCiudad, nota, estado)
                 MsgBox("Persona modificada correctamente.", vbInformation, "Información")
+                limpiar()
 
 
                 Cargar_Grilla()
             Catch ex As Exception
                 MsgBox("Error al modificar la persona: " & ex.Message, vbCritical, "Error")
+                limpiar()
             End Try
         Else
             MsgBox("Complete Datos", vbInformation, "Error")
+            limpiar()
         End If
     End Sub
 #End Region
 
+<<<<<<< HEAD
+    Public Sub limpiar()
+        txtApellido.Text = Nothing
+        txtNombre.Text = Nothing
+        txtCorreo.Text = Nothing
+        txtDireccion.Text = Nothing
+        txtID.Text = Nothing
+        txtNota.Text = Nothing
+        txtTelefono.Text = Nothing
+        cboCiudad.SelectedIndex = -1
+        cboProvincia.SelectedIndex = -1
+
+    End Sub
+
+    Private Sub btnAgregarCiudad_Click(sender As Object, e As EventArgs) Handles btnAgregarCiudad.Click
+        frmAgregarCiudad.ShowDialog()
+    End Sub
+
+    Private Sub txtDireccion_TextChanged(sender As Object, e As EventArgs) Handles txtDireccion.TextChanged
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub cboCiudad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCiudad.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        limpiar()
+
+    End Sub
+=======
+>>>>>>> 0062e405a165c8e13c2e55343e7a3003ee301f69
 End Class
