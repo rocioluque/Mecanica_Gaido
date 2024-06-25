@@ -2,16 +2,8 @@
 Imports System.Data
 Imports System.Runtime.InteropServices
 Imports AD_Mecanica_Gaido
+Imports Mecanica_Gaido_frm.User32
 
-Module User32
-    <DllImport("user32.dll", EntryPoint:="ReleaseCapture")>
-    Public Sub ReleaseCapture()
-    End Sub
-
-    <DllImport("user32.dll", EntryPoint:="SendMessage")>
-    Public Sub SendMessage(hWnd As IntPtr, wMsg As Integer, wParam As Integer, lParam As Integer)
-    End Sub
-End Module
 Public Class frmLogin
     Dim o_Login As New AD_Login
 #Region "Css trucho"

@@ -5,12 +5,16 @@ Imports System.Configuration
 Public Class frmPersonas
     Dim o_Personas As New AD_Personas
 
+<<<<<<< HEAD
     Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Cargar_Grilla()
         Cargar_Provincias()
         limpiar()
     End Sub
 
+=======
+#Region "Cargar Prov y ciudades"
+>>>>>>> 0062e405a165c8e13c2e55343e7a3003ee301f69
     Private Sub Cargar_Provincias()
         Try
             Dim tabla As DataTable = o_Personas.Cargar_Provincias()
@@ -59,6 +63,13 @@ Public Class frmPersonas
         Catch ex As Exception
             MsgBox("Error al cargar ciudades: " & ex.Message, vbCritical, "Error")
         End Try
+    End Sub
+#End Region
+
+#Region "Procedimientos"
+    Private Sub frmPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cargar_Grilla()
+        Cargar_Provincias()
     End Sub
 
     Public Sub Cargar_Grilla()
@@ -120,19 +131,42 @@ Public Class frmPersonas
             End If
         End If
     End Sub
+
     Private Sub grdPersonas_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles grdPersonas.CellClick
         If e.RowIndex >= 0 Then
             CargarDatosEnTextBoxes(e.RowIndex)
         End If
     End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        txtID.Clear()
+        txtNombre.Clear()
+        txtApellido.Clear()
+        txtTelefono.Clear()
+        txtCorreo.Clear()
+        txtDireccion.Clear()
+        txtNota.Clear()
+        chkEstado.Checked = False
+        cboCiudad.SelectedIndex = 0
+        cboProvincia.SelectedIndex = 0
+    End Sub
+#End Region
+
+#Region "Abrir frm para agregar datos"
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
-        frmEmpleados.ShowDialog()
+        frmAgregarEmpleados.ShowDialog()
     End Sub
 
     Private Sub btnCtasCtes_Click(sender As Object, e As EventArgs) Handles btnCuentas.Click
-        txtCargo.ShowDialog()
+        frmAgregarCuentas.ShowDialog()
     End Sub
 
+    Private Sub btnAgregarCiudad_Click(sender As Object, e As EventArgs) Handles btnAgregarCiudad.Click
+        frmAgregarCiudad.ShowDialog()
+    End Sub
+#End Region
+
+#Region "Cargar"
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         If txtNombre.Text <> Nothing And txtApellido.Text <> Nothing And txtTelefono.Text <> Nothing And txtCorreo.Text <> Nothing And
             txtDireccion.Text <> Nothing And cboCiudad.SelectedValue Then
@@ -161,7 +195,9 @@ Public Class frmPersonas
             limpiar()
         End If
     End Sub
+#End Region
 
+#Region "Modificar"
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If txtID.Text <> Nothing And txtNombre.Text <> Nothing And txtApellido.Text <> Nothing And txtTelefono.Text <> Nothing And txtCorreo.Text <> Nothing And
             txtDireccion.Text <> Nothing And cboCiudad.SelectedValue Then
@@ -191,7 +227,9 @@ Public Class frmPersonas
             limpiar()
         End If
     End Sub
+#End Region
 
+<<<<<<< HEAD
     Public Sub limpiar()
         txtApellido.Text = Nothing
         txtNombre.Text = Nothing
@@ -233,4 +271,6 @@ Public Class frmPersonas
         limpiar()
 
     End Sub
+=======
+>>>>>>> 0062e405a165c8e13c2e55343e7a3003ee301f69
 End Class

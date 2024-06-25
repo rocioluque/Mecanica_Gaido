@@ -46,7 +46,7 @@ Partial Class frmMenuPrincipal
         Me.btnOrdenReparacón = New System.Windows.Forms.Button()
         Me.btnVentas = New System.Windows.Forms.Button()
         Me.btnPersonas = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.panelNav = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
@@ -54,7 +54,7 @@ Partial Class frmMenuPrincipal
         Me.panelContenedor = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.panelNav.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -185,6 +185,7 @@ Partial Class frmMenuPrincipal
         '
         Me.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnCerrarSesion.FlatAppearance.BorderSize = 0
         Me.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen
         Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -192,9 +193,9 @@ Partial Class frmMenuPrincipal
         Me.btnCerrarSesion.ForeColor = System.Drawing.Color.White
         Me.btnCerrarSesion.Image = CType(resources.GetObject("btnCerrarSesion.Image"), System.Drawing.Image)
         Me.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 581)
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(0, 595)
         Me.btnCerrarSesion.Name = "btnCerrarSesion"
-        Me.btnCerrarSesion.Size = New System.Drawing.Size(243, 35)
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(240, 35)
         Me.btnCerrarSesion.TabIndex = 25
         Me.btnCerrarSesion.Text = "        Cerrar Sesión"
         Me.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -373,18 +374,18 @@ Partial Class frmMenuPrincipal
         Me.btnPersonas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPersonas.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'panelNav
         '
-        Me.Panel1.BackColor = System.Drawing.Color.SeaGreen
-        Me.Panel1.Controls.Add(Me.btnRestaurar)
-        Me.Panel1.Controls.Add(Me.btnMinimizar)
-        Me.Panel1.Controls.Add(Me.btnMaximizar)
-        Me.Panel1.Controls.Add(Me.btnCerrar)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1200, 30)
-        Me.Panel1.TabIndex = 1
+        Me.panelNav.BackColor = System.Drawing.Color.SeaGreen
+        Me.panelNav.Controls.Add(Me.btnRestaurar)
+        Me.panelNav.Controls.Add(Me.btnMinimizar)
+        Me.panelNav.Controls.Add(Me.btnMaximizar)
+        Me.panelNav.Controls.Add(Me.btnCerrar)
+        Me.panelNav.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelNav.Location = New System.Drawing.Point(0, 0)
+        Me.panelNav.Name = "panelNav"
+        Me.panelNav.Size = New System.Drawing.Size(1200, 30)
+        Me.panelNav.TabIndex = 1
         '
         'btnRestaurar
         '
@@ -449,7 +450,7 @@ Partial Class frmMenuPrincipal
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1200, 650)
         Me.Controls.Add(Me.panelContenedor)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.panelNav)
         Me.Controls.Add(Me.PanelMenu)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.DoubleBuffered = True
@@ -461,7 +462,7 @@ Partial Class frmMenuPrincipal
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        Me.panelNav.ResumeLayout(False)
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -477,7 +478,7 @@ Partial Class frmMenuPrincipal
     Friend WithEvents btnOrdenReparacón As Button
     Friend WithEvents btnVentas As Button
     Friend WithEvents btnCompras As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents panelNav As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel6 As Panel

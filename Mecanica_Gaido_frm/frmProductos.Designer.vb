@@ -23,9 +23,6 @@ Partial Class frmProductos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmProductos))
-        Me.btnModificar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnCargar = New System.Windows.Forms.Button()
         Me.grdProductos = New System.Windows.Forms.DataGridView()
         Me.chkActivo = New System.Windows.Forms.CheckBox()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -68,38 +65,15 @@ Partial Class frmProductos
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUtilidad = New System.Windows.Forms.TextBox()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
+        Me.btnAgregarMarca = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarRubro = New System.Windows.Forms.PictureBox()
         CType(Me.grdProductos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarRubro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnModificar
-        '
-        Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(720, 134)
-        Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(87, 23)
-        Me.btnModificar.TabIndex = 96
-        Me.btnModificar.Text = "MODIFICAR"
-        Me.btnModificar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(720, 82)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminar.TabIndex = 95
-        Me.btnEliminar.Text = "ELIMINAR"
-        Me.btnEliminar.UseVisualStyleBackColor = True
-        '
-        'btnCargar
-        '
-        Me.btnCargar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCargar.Location = New System.Drawing.Point(720, 183)
-        Me.btnCargar.Name = "btnCargar"
-        Me.btnCargar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCargar.TabIndex = 94
-        Me.btnCargar.Text = "CARGAR"
-        Me.btnCargar.UseVisualStyleBackColor = True
         '
         'grdProductos
         '
@@ -117,7 +91,7 @@ Partial Class frmProductos
         Me.chkActivo.AutoSize = True
         Me.chkActivo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkActivo.ForeColor = System.Drawing.Color.White
-        Me.chkActivo.Location = New System.Drawing.Point(490, 320)
+        Me.chkActivo.Location = New System.Drawing.Point(526, 320)
         Me.chkActivo.Name = "chkActivo"
         Me.chkActivo.Size = New System.Drawing.Size(85, 21)
         Me.chkActivo.TabIndex = 91
@@ -129,7 +103,7 @@ Partial Class frmProductos
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(354, 292)
+        Me.Label19.Location = New System.Drawing.Point(390, 292)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(51, 17)
         Me.Label19.TabIndex = 90
@@ -140,7 +114,7 @@ Partial Class frmProductos
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(353, 187)
+        Me.Label18.Location = New System.Drawing.Point(389, 187)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(108, 17)
         Me.Label18.TabIndex = 89
@@ -148,28 +122,28 @@ Partial Class frmProductos
         '
         'txtNumeroFila
         '
-        Me.txtNumeroFila.Location = New System.Drawing.Point(490, 210)
+        Me.txtNumeroFila.Location = New System.Drawing.Point(526, 210)
         Me.txtNumeroFila.Name = "txtNumeroFila"
         Me.txtNumeroFila.Size = New System.Drawing.Size(121, 20)
         Me.txtNumeroFila.TabIndex = 88
         '
         'txtCodigoBarra
         '
-        Me.txtCodigoBarra.Location = New System.Drawing.Point(490, 236)
+        Me.txtCodigoBarra.Location = New System.Drawing.Point(526, 236)
         Me.txtCodigoBarra.Name = "txtCodigoBarra"
         Me.txtCodigoBarra.Size = New System.Drawing.Size(121, 20)
         Me.txtCodigoBarra.TabIndex = 87
         '
         'txtFabricante
         '
-        Me.txtFabricante.Location = New System.Drawing.Point(490, 261)
+        Me.txtFabricante.Location = New System.Drawing.Point(526, 261)
         Me.txtFabricante.Name = "txtFabricante"
         Me.txtFabricante.Size = New System.Drawing.Size(121, 20)
         Me.txtFabricante.TabIndex = 86
         '
         'txtOrigen
         '
-        Me.txtOrigen.Location = New System.Drawing.Point(490, 289)
+        Me.txtOrigen.Location = New System.Drawing.Point(526, 289)
         Me.txtOrigen.Name = "txtOrigen"
         Me.txtOrigen.Size = New System.Drawing.Size(121, 20)
         Me.txtOrigen.TabIndex = 85
@@ -179,7 +153,7 @@ Partial Class frmProductos
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(353, 161)
+        Me.Label17.Location = New System.Drawing.Point(389, 161)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(118, 17)
         Me.Label17.TabIndex = 84
@@ -190,7 +164,7 @@ Partial Class frmProductos
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(354, 134)
+        Me.Label16.Location = New System.Drawing.Point(390, 134)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(134, 17)
         Me.Label16.TabIndex = 83
@@ -201,7 +175,7 @@ Partial Class frmProductos
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(354, 239)
+        Me.Label15.Location = New System.Drawing.Point(390, 239)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(99, 17)
         Me.Label15.TabIndex = 82
@@ -212,7 +186,7 @@ Partial Class frmProductos
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(354, 264)
+        Me.Label5.Location = New System.Drawing.Point(390, 264)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(114, 17)
         Me.Label5.TabIndex = 81
@@ -223,7 +197,7 @@ Partial Class frmProductos
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(354, 212)
+        Me.Label4.Location = New System.Drawing.Point(390, 212)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 17)
         Me.Label4.TabIndex = 80
@@ -234,7 +208,7 @@ Partial Class frmProductos
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(353, 55)
+        Me.Label3.Location = New System.Drawing.Point(389, 55)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 17)
         Me.Label3.TabIndex = 79
@@ -253,7 +227,7 @@ Partial Class frmProductos
         '
         'txtLista
         '
-        Me.txtLista.Location = New System.Drawing.Point(490, 79)
+        Me.txtLista.Location = New System.Drawing.Point(526, 79)
         Me.txtLista.Name = "txtLista"
         Me.txtLista.Size = New System.Drawing.Size(121, 20)
         Me.txtLista.TabIndex = 74
@@ -285,7 +259,7 @@ Partial Class frmProductos
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(353, 82)
+        Me.Label11.Location = New System.Drawing.Point(389, 82)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(80, 17)
         Me.Label11.TabIndex = 71
@@ -338,7 +312,7 @@ Partial Class frmProductos
         '
         'txtCompra
         '
-        Me.txtCompra.Location = New System.Drawing.Point(490, 52)
+        Me.txtCompra.Location = New System.Drawing.Point(526, 52)
         Me.txtCompra.Name = "txtCompra"
         Me.txtCompra.Size = New System.Drawing.Size(121, 20)
         Me.txtCompra.TabIndex = 65
@@ -352,7 +326,7 @@ Partial Class frmProductos
         '
         'txtFechaUltCompra
         '
-        Me.txtFechaUltCompra.Location = New System.Drawing.Point(490, 131)
+        Me.txtFechaUltCompra.Location = New System.Drawing.Point(526, 131)
         Me.txtFechaUltCompra.Name = "txtFechaUltCompra"
         Me.txtFechaUltCompra.Size = New System.Drawing.Size(121, 20)
         Me.txtFechaUltCompra.TabIndex = 63
@@ -373,7 +347,7 @@ Partial Class frmProductos
         '
         'txtFechaUltVenta
         '
-        Me.txtFechaUltVenta.Location = New System.Drawing.Point(490, 158)
+        Me.txtFechaUltVenta.Location = New System.Drawing.Point(526, 158)
         Me.txtFechaUltVenta.Name = "txtFechaUltVenta"
         Me.txtFechaUltVenta.Size = New System.Drawing.Size(121, 20)
         Me.txtFechaUltVenta.TabIndex = 60
@@ -387,7 +361,7 @@ Partial Class frmProductos
         '
         'txtEstanteria
         '
-        Me.txtEstanteria.Location = New System.Drawing.Point(490, 183)
+        Me.txtEstanteria.Location = New System.Drawing.Point(526, 183)
         Me.txtEstanteria.Name = "txtEstanteria"
         Me.txtEstanteria.Size = New System.Drawing.Size(121, 20)
         Me.txtEstanteria.TabIndex = 58
@@ -485,7 +459,7 @@ Partial Class frmProductos
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(354, 108)
+        Me.Label2.Location = New System.Drawing.Point(390, 108)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 17)
         Me.Label2.TabIndex = 101
@@ -493,10 +467,81 @@ Partial Class frmProductos
         '
         'txtUtilidad
         '
-        Me.txtUtilidad.Location = New System.Drawing.Point(490, 105)
+        Me.txtUtilidad.Location = New System.Drawing.Point(526, 105)
         Me.txtUtilidad.Name = "txtUtilidad"
         Me.txtUtilidad.Size = New System.Drawing.Size(121, 20)
         Me.txtUtilidad.TabIndex = 100
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.BackColor = System.Drawing.Color.Transparent
+        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnAceptar.FlatAppearance.BorderSize = 2
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.White
+        Me.btnAceptar.Location = New System.Drawing.Point(802, 49)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(82, 28)
+        Me.btnAceptar.TabIndex = 102
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnCancelar.FlatAppearance.BorderSize = 2
+        Me.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Location = New System.Drawing.Point(802, 183)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(82, 28)
+        Me.btnCancelar.TabIndex = 103
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'btnModificar
+        '
+        Me.btnModificar.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen
+        Me.btnModificar.FlatAppearance.BorderSize = 2
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.ForeColor = System.Drawing.Color.White
+        Me.btnModificar.Location = New System.Drawing.Point(802, 116)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(82, 28)
+        Me.btnModificar.TabIndex = 104
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = False
+        '
+        'btnAgregarMarca
+        '
+        Me.btnAgregarMarca.BackgroundImage = CType(resources.GetObject("btnAgregarMarca.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarMarca.Location = New System.Drawing.Point(312, 131)
+        Me.btnAgregarMarca.Name = "btnAgregarMarca"
+        Me.btnAgregarMarca.Size = New System.Drawing.Size(21, 21)
+        Me.btnAgregarMarca.TabIndex = 106
+        Me.btnAgregarMarca.TabStop = False
+        '
+        'btnAgregarRubro
+        '
+        Me.btnAgregarRubro.BackgroundImage = CType(resources.GetObject("btnAgregarRubro.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarRubro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAgregarRubro.Location = New System.Drawing.Point(312, 157)
+        Me.btnAgregarRubro.Name = "btnAgregarRubro"
+        Me.btnAgregarRubro.Size = New System.Drawing.Size(21, 21)
+        Me.btnAgregarRubro.TabIndex = 107
+        Me.btnAgregarRubro.TabStop = False
         '
         'frmProductos
         '
@@ -505,14 +550,16 @@ Partial Class frmProductos
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(955, 620)
+        Me.Controls.Add(Me.btnAgregarRubro)
+        Me.Controls.Add(Me.btnAgregarMarca)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtUtilidad)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.chkAlternativo)
         Me.Controls.Add(Me.txtId)
-        Me.Controls.Add(Me.btnModificar)
-        Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.btnCargar)
         Me.Controls.Add(Me.grdProductos)
         Me.Controls.Add(Me.chkActivo)
         Me.Controls.Add(Me.Label19)
@@ -557,14 +604,12 @@ Partial Class frmProductos
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Productos"
         CType(Me.grdProductos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarMarca, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarRubro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnModificar As Button
-    Friend WithEvents btnEliminar As Button
-    Friend WithEvents btnCargar As Button
     Friend WithEvents grdProductos As DataGridView
     Friend WithEvents chkActivo As CheckBox
     Friend WithEvents Label19 As Label
@@ -607,4 +652,9 @@ Partial Class frmProductos
     Friend WithEvents btnBuscar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUtilidad As TextBox
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnAgregarMarca As PictureBox
+    Friend WithEvents btnAgregarRubro As PictureBox
 End Class
