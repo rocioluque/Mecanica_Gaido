@@ -90,6 +90,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAgregarFormaEntrega.Designer.vb">
+      <DependentUpon>frmAgregarFormaEntrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarFormaEntrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAgregarFormaPago.Designer.vb">
       <DependentUpon>frmAgregarFormaPago.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,12 @@
     <Compile Include="frmAgregarTipoVehiculo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAgregarTipoVenta.Designer.vb">
+      <DependentUpon>frmAgregarTipoVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarTipoVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmVehiculos.Designer.vb">
       <DependentUpon>frmVehiculos.vb</DependentUpon>
     </Compile>
@@ -215,11 +227,17 @@
     <EmbeddedResource Include="frmAgregarCiudad.resx">
       <DependentUpon>frmAgregarCiudad.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarFormaEntrega.resx">
+      <DependentUpon>frmAgregarFormaEntrega.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarFormaPago.resx">
       <DependentUpon>frmAgregarFormaPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarSeccion.resx">
       <DependentUpon>frmAgregarSeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarTipoVenta.resx">
+      <DependentUpon>frmAgregarTipoVenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCompras.resx">
       <DependentUpon>frmCompras.vb</DependentUpon>
