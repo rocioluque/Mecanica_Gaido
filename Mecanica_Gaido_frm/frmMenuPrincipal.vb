@@ -1,6 +1,5 @@
 ﻿Imports System.Data
 Imports System.Runtime.InteropServices
-Imports Dominio
 Imports Comun_Soporte
 
 Public Class frmMenuPrincipal
@@ -133,6 +132,10 @@ Public Class frmMenuPrincipal
 
     Private Sub btnVehiculos_Leave(sender As Object, e As EventArgs) Handles btnVehiculos.Leave
         DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
+    End Sub
+
+    Private Sub panelContenedor_Paint(sender As Object, e As PaintEventArgs) Handles panelContenedor.Paint
+
     End Sub
 
 
