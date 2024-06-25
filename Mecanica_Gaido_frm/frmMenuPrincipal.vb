@@ -123,6 +123,14 @@ Public Class frmMenuPrincipal
         DirectCast(sender, Button).BackColor = Color.FromArgb(65, 65, 65)
     End Sub
 
+<<<<<<< HEAD
+    Private Sub panelContenedor_Paint(sender As Object, e As PaintEventArgs) Handles panelContenedor.Paint
+
+    End Sub
+
+
+=======
+>>>>>>> 0062e405a165c8e13c2e55343e7a3003ee301f69
 #End Region
 
 #Region "frm Padre y resize"
