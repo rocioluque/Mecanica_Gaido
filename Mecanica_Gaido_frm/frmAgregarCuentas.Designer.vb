@@ -289,9 +289,10 @@ Partial Class frmAgregarCuentas
         '
         'grdCuenta
         '
-        Me.grdCuenta.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.grdCuenta.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.grdCuenta.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.grdCuenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdCuenta.GridColor = System.Drawing.Color.DarkGray
         Me.grdCuenta.Location = New System.Drawing.Point(49, 198)
         Me.grdCuenta.Name = "grdCuenta"
         Me.grdCuenta.ReadOnly = True
