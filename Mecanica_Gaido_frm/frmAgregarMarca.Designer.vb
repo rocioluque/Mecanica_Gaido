@@ -74,11 +74,11 @@ Partial Class frmAgregarMarca
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'frmMarca
+        'frmAgregarMarca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(402, 170)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.txtMarca)
@@ -86,7 +86,7 @@ Partial Class frmAgregarMarca
         Me.Controls.Add(Me.btnAgregar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmMarca"
+        Me.Name = "frmAgregarMarca"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmMarca"
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
